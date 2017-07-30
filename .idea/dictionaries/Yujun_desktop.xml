@@ -3,6 +3,7 @@
     <words>
       <w>proc</w>
       <w>pycalc</w>
+      <w>zeromq</w>
       <w>zerorpc</w>
     </words>
   </dictionary>

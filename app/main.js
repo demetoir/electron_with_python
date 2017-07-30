@@ -15,9 +15,7 @@ const createWindow = function () {
     }))
     mainWindow.webContents.openDevTools()
     mainWindow.on('close', function () {
-        console.log("main windows closed")
         mainWindow = null
-          app.exit(1)
     })
     console.log('createWindow')
 
@@ -60,7 +58,6 @@ const exitPyProc = function () {
     pyProc = null
     pyPort = null
     console.log('py proc die')
-
 }
 
 app.on('ready', createPyProc)

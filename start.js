@@ -1,5 +1,4 @@
-// const path = '.\\electron\\electron.exe'
-const path = 'electron .\\electron\\resources\\app'
+const path = 'electron app'
 const
   spawn = require('child_process').exec,
   child = spawn(path)
