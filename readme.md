@@ -36,3 +36,9 @@ cmd : npm rebuild zeromq --runtime=electron --target=1.6.11
 
 
 
+*** packet-python error ***
+reinstall module
+pip install packet-python
+pip install zeromq
+
+
