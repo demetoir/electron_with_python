@@ -1,9 +1,9 @@
 // main.js
-
 const electron = require('electron')
 const electronLocalshortcut = require('electron-localshortcut')
 const app = electron.app
 const BrowserWindow = electron.BrowserWindow
+const ipcMain = electron.ipcMain
 const path = require('path')
 
 let mainWindow = null
@@ -54,39 +54,34 @@ app.on('activate', function () {
 
 // add these to the end or middle of main.js
 
-let pyProc = null
-let pyPort = null
-
-const selectPort = function () {
-    pyPort = 4242
-    return pyPort
-}
-
-const createPyProc = function () {
-    let port = '' + selectPort()
-    let script = path.join(__dirname, 'my_webcrawler', 'main', 'pyServer.py')
-    console.log("python "+script)
-    pyProc = require('child_process').spawn('python', [script, port])
-    if (pyProc !== null) {
-        console.log('child process spawn success')
+let pyServer = null
+const createPyServer = function () {
+    let port = '' + '4242'
+    let script = path.join(__dirname, 'pyside', 'main', 'server', 'PyServer.py')
+    console.log('python ' + script)
+    pyServer = require('child_process').spawn('python', [script, port])
+    if (pyServer !== null) {
+        console.log('pyServer spawn success')
     }
 }
-
-const exitPyProc = function () {
-    pyProc.kill()
-    pyProc = null
-    pyPort = null
-    console.log('py proc die')
+const exitPyServer = function () {
+    pyServer.kill()
+    pyServer = null
+    console.log('pyServer kill success')
 }
 
 app.on('ready', () => {
-    createPyProc()
-
+    createPyServer()
 })
 
 app.on('will-quit', () => {
-    exitPyProc()
+    exitPyServer()
     electronLocalshortcut.unregisterAll()
 })
 
-
+// ipc main and renderer
+// http://electron.rocks/different-ways-to-communicate-between-main-and-renderer-process/
+ipcMain.on('async', (event, arg) => {
+    console.log('main rec :' + arg)
+    event.sender.send('async', 'to renderer')
+})
