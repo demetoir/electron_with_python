@@ -20,6 +20,7 @@ const createWindow = function () {
     })
     console.log('electron createWindow')
 
+    //local keyboard shortcut
     electronLocalshortcut.register(mainWindow, 'Up', () => {
         console.log('up pressed')
     })
