@@ -6,6 +6,7 @@ electron, python 프로세스를 각각 실행하고 zerorpc 를 사용하여 �
 참고 사이트
 https://www.fyears.org/2017/02/electron-as-gui-of-python-apps-updated.html
 
+zerorpc tcp://localhost:4242 calc "1 + 1"
 
 ***2017.07.27***
 # setting & start_app.js

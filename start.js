@@ -1,17 +1,13 @@
-const path = 'electron app'
-const
-  spawn = require('child_process').exec,
-  child = spawn(path)
+const spawn = require('child_process').spawn
+const child = spawn('electron', ['app'])
 
-exitHandler = function (code) {
+child.addListener('exit', function (code) {
     console.log('child process exited with code ' + code.toString())
     process.exit()
-}
-
-child.addListener('exit', exitHandler)
+})
 
 child.stdout.on('data', function (data) {
-    console.log('stdout: ' + data.toString())
+    console.log(data.toString())
 })
 
 child.stderr.on('data', function (data) {

@@ -1,28 +1,38 @@
 from __future__ import print_function
-from calc import calc as real_calc
-import sys
 import zerorpc
+import logging
+from os import path
 
-class CalcApi(object):
-    def calc(self, text):
-        """based on the input text, return the int result"""
-        try:
-            return real_calc(text)
-        except Exception as e:
-            return 0.0
+
+class Pyserver(object):
+    def __init__(self):
+        # cur_path = '/home/demetoir/WebstormProjects/electron_with_python/app/pycalc/pyserver_log.txt'
+        self.log = logging.getLogger(self.__class__.__name__ + ' logger')
+        cur_path = path.join(path.curdir, 'pyserver.log')
+        self.log.basicConfig(filename=cur_path, level=logging.INFO)
+
+        pass
+
+    def __repr__(self):
+        return self.__class__.__name__
+
     def echo(self, text):
         """echo any text"""
+        self.log.info(text)
         return text
 
-def parse_port():
-    return str(4242)
+    def f(self, text, num, ):
+        return "response %s %d" % (text, int(num))
+
 
 def main():
-    addr = 'tcp://127.0.0.1:' + parse_port()
-    s = zerorpc.Server(CalcApi())
+    port = str(4242)
+    addr = 'tcp://127.0.0.1:' + port
+    s = zerorpc.Server(Pyserver())
     s.bind(addr)
     print('start running on {}'.format(addr))
     s.run()
+
 
 if __name__ == '__main__':
     main()
