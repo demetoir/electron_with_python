@@ -6,33 +6,53 @@ const remote = electron.remote
 
 const main = remote.require('./main.js')
 
+// connect pyServer
 const port = '4242'
 client.connect('tcp://127.0.0.1:' + port)
-
-client.invoke('echo', 'server ready', function (error, res) {
-    if (error || res !== 'server ready') {
+client.invoke('echo', 'pyServer ready', function (error, res) {
+    if (error || res !== 'pyServer ready') {
         console.error(error)
     } else {
-        console.log('server is ready')
+        console.log('pyServer is ready')
     }
 })
 
 let html_address = document.querySelector('#html_address')
 let html_output = document.querySelector('#html_output')
+let tag_list = document.querySelector('#tag_list')
+let btn_go = document.querySelector('#go')
+let btn_back = document.querySelector('#back')
+let tag_number = document.querySelector('#tag_number')
+
+btn_back.addEventListener('click', ()=>{
+    client.invoke('back', )
+    // ipcRenderer.send('back', 0)
+})
+
+btn_go.addEventListener('click', ()=>{
+    // ipcRenderer.send('go', tag_number.value)
+})
+
 
 html_address.addEventListener('input', () => {
-    html_output.textContent  = html_input.value
+    ipcRenderer.send('update_html_address', html_address.value)
 })
 // what is purpose of below code?
 // html_input.dispatchEvent(new Event('input'));
+
+ipcRenderer.on('update_page', (event, args) => {
+    console.log('update page')
+    html_output.textContent = args[0]
+    tag_list.textContent = args[1]
+})
 
 
 
 // ipc main and renderer
 // http://electron.rocks/different-ways-to-communicate-between-main-and-renderer-process/
 ipcRenderer.send('async', 'to main')
-ipcRenderer.on('async', (event, arg)=>{
-    console.log('renderer recv :'+arg)
+ipcRenderer.on('async', (event, arg) => {
+    console.log('renderer recv :' + arg)
 })
 
 

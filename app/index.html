@@ -1,17 +1,31 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Hello Calculator!</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello Calculator!</title>ho
+    </head>
 <body>
-
-<h1>Hello Calculator!</h1>
-<br>
-<input id="html_address" value=""/>
-<div id="html_output"></div>
-
+    <div>
+        <p>html address</p>
+        <input id="html_address" value=""/>
+    </div>
+    <hr>
+    <div>
+        <p>tag list</p>
+        <div id="tag_list"></div>
+    </div>
+    <hr>
+    <div>
+        <input id="tag_number" value=""/>
+        <button id="go">go</button>
+        <button id="back">back</button>
+    </div>
+    <hr>
+    <div>
+        <p>html output</p>
+        <div id="html_output"></div>
+    </div>
 </body>
 <script>
     require('./renderer.js')

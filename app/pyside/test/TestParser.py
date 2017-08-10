@@ -5,7 +5,7 @@ from nose import with_setup
 
 from main import util
 from main.db.DbContract import NewFeedContract
-from main.htmlTagExplorer.HardParser import HardParser
+from main.tagExplorer.HardParser import HardParser
 
 # from main.Tag import Tag
 

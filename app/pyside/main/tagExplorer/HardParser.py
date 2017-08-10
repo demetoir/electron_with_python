@@ -3,8 +3,8 @@ from bs4 import BeautifulSoup as bs, Comment
 
 try:
     from main.db.DbContract import *
-    from main.logger import Logger
-    from main.htmlTagExplorer.Tag import Tag
+    from main.logger.logger import Logger
+    from main.tagExplorer.Tag import Tag
 except ModuleNotFoundError as e:
     from DbContract import *
     from logger import Logger
@@ -59,12 +59,12 @@ class HardParser(object):
         tag_list = ['style', 'br', 'script', 'meta', 'button', 'head', 'body', 'html']
         soup = bs(html, HTML_PARSER)
         for item in soup.findChildren():
-            if item.name in tag_list or len(item.contents) == 0:
+            if item.name in tag_list or len(item.__children) == 0:
                 continue
 
             print(item.name)
             print(item.attrs)
-            for idx, content in enumerate(item.contents):
+            for idx, content in enumerate(item.__children):
                 if str(content).isspace():
                     continue
 

@@ -23,7 +23,7 @@ def print_parse_items(items):
 
 
 def print_soup_children(soup):
-    for i, child in enumerate(soup.children):
+    for i, child in enumerate(soup.__children):
         if child.name is None:
             continue
         print(i, child.name, child.attrs)
@@ -31,15 +31,63 @@ def print_soup_children(soup):
 
 
 def open_web(html):
-    # write html file
-    path = os.path.curdir
+    """opening web page by string type html """
     file_name = 'punning_html.html'
-    full_path = os.path.join(path, file_name)
+    full_path = os.path.join(os.path.curdir, file_name)
     with open(full_path, 'wb') as f:
         f.write(html.encode('utf-8'))
 
     webbrowser.open_new_tab(full_path)
 
 
+def argsToStr(*args):
+    return " ".join(map(str, args))
+
+
+def isFloat(s):
+    try:
+        float(s)
+    except Exception as e:
+        return False
+    return True
+
+
+def isInt(s):
+    try:
+        int(s)
+    except Exception as e:
+        return False
+    return True
+
+
+def argsTypeMapping(*args):
+    ret = []
+    for arg in args:
+        if isInt(arg):
+            ret += [int(arg)]
+        elif isFloat(arg):
+            ret += [float(arg)]
+        else:
+            ret += [arg]
+    return ret
+
+
+def argsMapper(arg):
+    if isInt(arg):
+        ret = int(arg)
+    elif isFloat(arg):
+        ret = float(arg)
+    else:
+        ret = str(arg)
+    return ret
+
+
 if __name__ == '__main__':
-    clean_up()
+    i = ['1', '2', '"3"', '6.5']
+    out = list(map(argsMapper, i))
+
+    print(out)
+    for i in out:
+        print(i, type(i))
+
+    pass

@@ -52,8 +52,7 @@ app.on('activate', function () {
     }
 })
 
-// add these to the end or middle of main.js
-
+//pyServer process spawn and kill
 let pyServer = null
 const createPyServer = function () {
     let port = '' + '4242'
