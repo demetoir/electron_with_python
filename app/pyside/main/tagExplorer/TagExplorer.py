@@ -10,6 +10,11 @@ class TagExplorer(object):
     HTML_PARSER = 'lxml'
 
     def __init__(self, url=None, filter_list=None):
+        """
+        :param url: str option
+        :param filter_list: iterable
+
+        """
         self.log = Logger(self.__class__.__name__).log
 
         if filter_list is None:
@@ -18,7 +23,8 @@ class TagExplorer(object):
         self.url = url
 
         self.__root__ = None
-        self.__stack__ = None
+        self.stack_soup = None
+        self.stack_idx = None
         if self.url is not None:
             self.set_url(url)
 
@@ -28,7 +34,7 @@ class TagExplorer(object):
         return "%s url:%s" % (self.__class__.__name__, self.url)
 
     def __len__(self):
-        return len(self.__stack__)
+        return len(self.stack_soup)
 
     def __children(self):
         """
@@ -36,7 +42,7 @@ class TagExplorer(object):
 
         :return BeautifulSoup object
         """
-        return self.__stack__[-1].contents
+        return self.stack_soup[-1].contents
 
     def __filter_soup(self, soup):
         """
@@ -84,7 +90,8 @@ class TagExplorer(object):
         """
         html = " ".join(requests.get(url).text.split())
         self.__root__ = bs(html, self.HTML_PARSER)
-        self.__stack__ = [self.__root__]
+        self.stack_soup = [self.__root__]
+        self.stack_idx = [None]
 
     def set_filter(self, *args):
         """set TXP instance's filter
@@ -125,7 +132,7 @@ class TagExplorer(object):
 
         :return str
         """
-        return str(self.__filter_soup(self.__stack__[-1]))
+        return str(self.__filter_soup(self.stack_soup[-1]))
 
     def move_down(self, idx):
         """
@@ -136,8 +143,9 @@ class TagExplorer(object):
 
         :return None
         """
-        self.log.error('at move_down ' + str(idx) + ' ' + str(type(idx)))
-        self.__stack__ += [self.__stack__[-1].contents[idx]]
+        # self.log.error('at move_down ' + str(idx) + ' ' + str(type(idx)))
+        self.stack_soup += [self.stack_soup[-1].contents[idx]]
+        self.stack_idx += [idx]
 
     def move_up(self):
         """
@@ -145,17 +153,19 @@ class TagExplorer(object):
 
         :return None
         """
-        if len(self.__stack__) > 1:
-            self.__stack__.pop()
+        if len(self.stack_soup) > 1:
+            self.stack_soup.pop()
+            self.stack_idx.pop()
 
     def trace_stack(self):
         """
         return stack trace
 
         :return: list
+        select idx, tag's name, tag's attrs
         """
         ret = []
-        for idx, item in enumerate(self.__stack__[1:]):
+        for idx, item in zip(self.stack_idx[1:], self.stack_soup[1:]):
             cur = self.__root__.find(item.name, item.attrs)
             ret += [(idx, cur.name, cur.attrs)]
         return ret

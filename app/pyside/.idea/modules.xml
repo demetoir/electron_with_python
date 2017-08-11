@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/my_web_crowler.iml" filepath="$PROJECT_DIR$/.idea/my_web_crowler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/pyside.iml" filepath="$PROJECT_DIR$/.idea/pyside.iml" />
     </modules>
   </component>
 </project>

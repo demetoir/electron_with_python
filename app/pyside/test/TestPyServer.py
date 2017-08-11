@@ -1,9 +1,10 @@
 from nose import with_setup
 import subprocess
 import time
+import zerorpc
+from main.util.util import *
 
 URL_SITE = """http://bbs.ruliweb.com/best/humor?&page=1"""
-
 # add PyServer directory to system path
 try:
     import os
@@ -21,25 +22,24 @@ except Exception as e:
     exit(-1)
 
 
-def spawn_process(query_cmd=None):
-    p = subprocess.Popen(
-        query_cmd,
-        stdout=subprocess.PIPE)
+def connect_zerorpc(cmd, *args):
+    conn = zerorpc.Client()
+    conn.connect("tcp://127.0.0.1:4242")
 
-    ret = str(p.stdout.readline(), 'utf-8')
+    print('cmd : %s , args : %s ' % (cmd, argsToStr(args)))
 
-    while True:
-        # line = str(p.stdout.readline(), 'utf-8')[2:-3]
-        line = str(p.stdout.readline(), 'utf-8')
-        if line == "":
-            break
-        ret += line.replace("'", "")
-        time.sleep(0.0001)
+    method = getattr(conn, cmd)
+    ret = method(*args)
 
-    p.terminate()
+    conn.close()
+    if type(ret) is list:
+        for i in ret:
+            print(i)
+    else:
+        print(ret)
+    print()
 
     return ret
-
 
 def setup_func():
     pass
@@ -49,130 +49,81 @@ def teardown_func():
     pass
 
 
-cmds = [
-
-    ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'current_html'],
-
-    ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'set_filter', 'script', 'header', 'footer',
-     'noscript'],
-    ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'current_html'],
-
-    ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'set_filter', 'head', 'script', 'header', 'footer',
-     'noscript'],
-
-    ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'set_filter', 'head', 'script', 'header', 'footer',
-     'noscript', 'comment', 'NavigableString'],
-
-    ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'children_tag'],
-    ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'move_down', '5'],
-
-    ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'children_tag'],
-
-]
-
-
 @with_setup(setup_func, teardown_func)
 def test_00_connection_test():
-    cmd = ['zerorpc', 'tcp://127.0.0.1:4242']
-    ret = spawn_process(cmd)
-    print(ret)
+    pass
+    connect_zerorpc('echo', """ '1', 2, 3, "4" """)
 
 
 @with_setup(setup_func, teardown_func)
 def test_01_help():
-    cmd = ['zerorpc', 'tcp://127.0.0.1:4242', 'help']
-    ret = spawn_process(query_cmd=cmd)
-    print(ret)
+    connect_zerorpc('help')
 
 
 @with_setup(setup_func, teardown_func)
 def test_02_set_url():
-    cmd = ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'set_url', "http://bbs.ruliweb.com/best/humor?&page=1"]
-    ret = spawn_process(cmd)
-    print(ret)
+    connect_zerorpc('execute', "set_url", "http://bbs.ruliweb.com/best/humor?&page=1")
 
 
 @with_setup(setup_func, teardown_func)
 def test_03_current_html():
-    cmd = ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'current_html']
-    ret = spawn_process(cmd)
-    print(ret)
+    connect_zerorpc('execute', 'current_html')
 
 
 @with_setup(setup_func, teardown_func)
 def test_04_children_tag():
-    cmd = ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'children_tag']
-    ret = spawn_process(cmd)
-    print(ret)
+    connect_zerorpc('execute', 'children_tag')
 
 
 @with_setup(setup_func, teardown_func)
 def test_05_set_filter():
     # before
-    cmd = ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'children_tag']
-    ret = spawn_process(cmd)
-    print(ret)
+    connect_zerorpc('execute', 'children_tag')
 
-    cmd = ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'set_filter', 'head']
-    ret = spawn_process(cmd)
-    print(ret)
+    connect_zerorpc('execute', 'set_filter', 'head')
 
     # after
-    cmd = ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'children_tag']
-    ret = spawn_process(cmd)
-    print(ret)
+    connect_zerorpc('execute', 'children_tag')
 
 
 @with_setup(setup_func, teardown_func)
 def test_06_move_down():
-    # before
-    cmd = ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'children_tag']
-    ret = spawn_process(cmd)
-    print(ret)
+    connect_zerorpc('execute', 'children_tag')
 
-    cmd = ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'move_down', '7']
-    ret = spawn_process(cmd)
-    print(ret)
+    connect_zerorpc('execute', 'move_down', '7')
 
-    # after
-    cmd = ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'children_tag']
-    ret = spawn_process(cmd)
-    print(ret)
+    connect_zerorpc('execute', 'children_tag')
 
 
 @with_setup(setup_func, teardown_func)
 def test_07_move_up():
     # before
-    cmd = ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'children_tag']
-    ret = spawn_process(cmd)
-    print(ret)
-
-    cmd = ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'move_up', ]
-    ret = spawn_process(cmd)
-    print(ret)
+    connect_zerorpc('execute', 'move_up')
 
     # after
-    cmd = ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'children_tag']
-    ret = spawn_process(cmd)
-    print(ret)
+    connect_zerorpc('execute', 'children_tag')
 
 
 @with_setup(setup_func, teardown_func)
 def test_08_trace_stack():
-    # before
-    cmd = ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'trace_stack', ]
-    ret = spawn_process(cmd)
-    print(ret)
+    connect_zerorpc('execute', "set_url", "http://bbs.ruliweb.com/best/humor?&page=1")
+    connect_zerorpc('execute', 'set_filter', 'head', 'script', 'header', 'footer',
+                    'noscript', 'comment', 'NavigableString')
 
-    cmd = ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'move_down', '7']
-    ret = spawn_process(cmd)
-    print(ret)
+    connect_zerorpc('execute', 'trace_stack')
+    connect_zerorpc('execute', 'children_tag')
+    connect_zerorpc('execute', 'move_down', '7')
 
-    # after
-    cmd = ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'trace_stack', ]
-    ret = spawn_process(cmd)
-    print(ret)
-    # cleanup
-    cmd = ['zerorpc', 'tcp://127.0.0.1:4242', 'execute', 'move_up', ]
-    ret = spawn_process(cmd)
-    print(ret)
+    connect_zerorpc('execute', 'trace_stack', )
+    connect_zerorpc('execute', 'children_tag')
+
+    connect_zerorpc('execute', 'move_down', '5')
+
+    connect_zerorpc('execute', 'trace_stack')
+    connect_zerorpc('execute', 'children_tag')
+
+    connect_zerorpc('execute', 'move_down', '7')
+
+    connect_zerorpc('execute', 'trace_stack')
+
+    connect_zerorpc('execute', 'children_tag')

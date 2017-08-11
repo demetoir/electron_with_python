@@ -1,42 +1,30 @@
-def add(a, b):
-    print('in add', a, b)
-    return a + b
+import zerorpc
+from main.util.util import *
 
 
-def f(func, *args):
-    print('in f', *args)
-    return func(*args)
+def connect_zerorpc(cmd, *args):
+    conn = zerorpc.Client()
+    conn.connect("tcp://127.0.0.1:4242")
 
+    print('cmd : %s , args : %s ' % (cmd, argsToStr(args)))
 
-def no_param():
-    print('in s')
-    return 0
+    method = getattr(conn, cmd)
+    ret = method(*args)
+
+    conn.close()
+    if ret is not None:
+        for i in ret:
+            print(i)
+    else:
+        print(ret)
+    print()
+
+    return ret
 
 
 if __name__ == '__main__':
-    a = (1, 2)
-    f(add, *a)
-    f(no_param, *())
-    f(no_param, *(1, 2, 3))
-
-    s = 'ssss     sd s s s s s'
-    print(s)
-    print(str(s))
-    print(s.isspace())
-
-    #
-    # parser = Parser()
-    #
-    # items = []
-    # for i in range(1, 2 + 1):
-    #     res = parser.parse_ruliweb(URL_SITE % i)
-    #     items += res
-    #
-    # items.sort(key=lambda item: item[NewFeedContract.KW_URL])
-    #
-    # db_helper = DbHelper()
-    # table_name = NewFeedContract.TABLE_NAME
-    #
-    # res = db_helper.insert_items(table_name, items)
-    #
-    # rows = db_helper.query_all(table_name)
+    connect_zerorpc('echo', ('1', 2, 3, "4"))
+    connect_zerorpc('execute', "set_url http://bbs.ruliweb.com/best/humor?&page=1")
+    connect_zerorpc('execute', "set_filter", "head")
+    connect_zerorpc('execute', "children_tag")
+    pass

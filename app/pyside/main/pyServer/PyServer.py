@@ -23,6 +23,9 @@ from main.util.util import *
 
 class PyServer:
     """zerorpc based python server for TagExplorer"""
+    DEFAULT_PORT = str(4242)
+    DEFAULT_ADDRESS = 'tcp://127.0.0.1'
+    DEFAULT_FULL_ADDRESS = DEFAULT_ADDRESS + ":" + DEFAULT_PORT
 
     def __init__(self):
         self.log = Logger(self.__class__.__name__).log
@@ -64,32 +67,30 @@ class PyServer:
         :return: executed cmd result
         """
         # type mapping
-        args = tuple(map(argsMapper, args))
-
         ret = None
-        if hasattr(txp, cmd):
-            method = getattr(self.txp, cmd)
-            self.log.info(self.txp.__class__.__name__ + ' execute cmd : %s args : %s' % (cmd, argsToStr(args)))
-            try:
+        try:
+            args = tuple(map(argsMapper, args))
+            if hasattr(txp, cmd):
+                method = getattr(self.txp, cmd)
+                self.log.info(self.txp.__class__.__name__ + ' execute cmd : %s args : %s' % (cmd, argsToStr(args)))
                 ret = method(*args)
-            # TODO need exception filtering more
-            except Exception as e:
-                self.log.error(e)
-                msg = self.txp.__class__.__name__ + " execute fail, cmd %s args %s does not match" % (
-                    cmd, argsToStr(args))
-                self.log.error(msg)
-                return msg
-            finally:
-                return ret
-        else:
-            msg = self.txp.__class__.__name__ + ' can not execute %s' % cmd
+
+        except Exception as e:
+            msg = self.txp.__class__.__name__ + ' can not execute %s' % cmd + "\n" + e
             self.log.error(msg)
-            return msg
+            ret = msg
+
+        finally:
+            return ret
+
+    def execute_many(self, *args):
+        # tODO need?
+        pass
 
     def info(self):
         """
-        return infomation of txp instance
-        curent target url and filer list
+        return information of txp instance
+        current target url and filer list
 
         :return: list
         """
@@ -98,12 +99,8 @@ class PyServer:
         return url, filter_list
 
 
-DEFAULT_PORT = str(4242)
-DEFAULT_ADDRESS = 'tcp://127.0.0.1'
-
-
 def main():
-    addr = DEFAULT_ADDRESS + ":" + DEFAULT_PORT
+    addr = PyServer.DEFAULT_FULL_ADDRESS
     print('zerorpc ' + addr)
     server = zerorpc.Server(PyServer())
     server.bind(addr)
