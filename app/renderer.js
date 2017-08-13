@@ -23,6 +23,7 @@ let tag_list = document.querySelector('#tag_list')
 let btn_go = document.querySelector('#go')
 let btn_back = document.querySelector('#back')
 let tag_number = document.querySelector('#tag_number')
+let trace_stack = document.querySelector('#stack_trace')
 
 btn_back.addEventListener('click', ()=>{
     client.invoke('back', )
