@@ -1,22 +1,27 @@
 //platform issue need hack
-console.log('platform : '+ process.platform)
-let child = null
-if(process.platform === 'win32'){
-    child = require('child_process').exec('electron app')
-}else{
-    child = require('child_process').spawn('electron',['app'])
+start_project = function(){
+    let ps = null
+    if(process.platform === 'win32'){
+        ps = require('child_process').exec('electron app')
+    }else{
+        ps = require('child_process').spawn('electron',['app'])
+    }
+    return ps
 }
 
-child.addListener('exit', function (code) {
+console.log('platform : '+ process.platform)
+let project = start_project()
+
+project.addListener('exit', function (code) {
     console.log('child process exited with code ' + code.toString())
     process.exit()
 })
 
-child.stdout.on('data', function (data) {
+project.stdout.on('data', function (data) {
     console.log(data.toString())
 })
 
-child.stderr.on('data', function (data) {
+project.stderr.on('data', function (data) {
     console.log('stderr: ' + data.toString())
 })
 

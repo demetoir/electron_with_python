@@ -1,11 +1,15 @@
 from bs4 import BeautifulSoup as bs, Comment, NavigableString
 import requests
 from main.logger.logger import Logger
+import queue
+import json
 
 
 class TagExplorer(object):
-    """html tag explorer class"""
-    """BeautifulSoup based"""
+    """
+    html tag explorer class
+    BeautifulSoup based
+    """
 
     HTML_PARSER = 'lxml'
 
@@ -20,15 +24,14 @@ class TagExplorer(object):
         if filter_list is None:
             filter_list = []
 
-        self.url = url
-
         self.__root__ = None
         self.stack_soup = None
         self.stack_idx = None
-        if self.url is not None:
-            self.set_url(url)
-
+        self.tag_name = None
+        self.attr_key = None
         self.filter_list = filter_list
+        if url is not None:
+            self.set_root(url)
 
     def __repr__(self):
         return "%s url:%s" % (self.__class__.__name__, self.url)
@@ -80,9 +83,8 @@ class TagExplorer(object):
                 ret += [(idx, name, attrs)]
         return ret
 
-    def set_url(self, url):
-        """set TXP instance's target url
-
+    def set_root(self, url):
+        """
         :param
         url : str
 
@@ -94,8 +96,7 @@ class TagExplorer(object):
         self.stack_idx = [None]
 
     def set_filter(self, *args):
-        """set TXP instance's filter
-
+        """
         :param
         args : iterable
 
@@ -169,3 +170,82 @@ class TagExplorer(object):
             cur = self.__root__.find(item.name, item.attrs)
             ret += [(idx, cur.name, cur.attrs)]
         return ret
+
+    # todo refactoring and it is pain in my ass
+    @staticmethod
+    def __extract(tag_name=None, attr_key=None, trace_stack=None, root=None):
+        """
+        extract all tags like current tag's signature
+
+        search will start from self.__root__
+        filter by trace_stack's name and attrs
+        item is beautifulsoup object so
+
+        :param tag_name: string
+        :param attr_key: string
+        :return: list
+        """
+
+        q = [root]
+        for idx, name, attrs in trace_stack:
+            new_q = []
+
+            for item in q:
+                for child in item.children:
+                    if child.name == name and child.attrs == attrs:
+                        new_q += [child]
+
+            q = new_q[:]
+
+        # filter tags
+        if tag_name is not None:
+            ret = []
+            for tags in q:
+                for tag in tags.find_all(tag_name):
+                    if attr_key in tag.attrs:
+                        ret += [tag.attrs[attr_key]]
+                    else:
+                        ret += [tag]
+        else:
+            ret = q
+
+        return list(map(str, ret))
+
+    def extract_from_parse_form(self, url, parse_form=None):
+        if parse_form is None:
+            parse_form = self.parse_form
+
+        tag_name = parse_form['tag_name']
+        attr_key = parse_form['attr_key']
+        trace_stack = parse_form['stack_trace']
+        html = " ".join(requests.get(url).text.split())
+        root = bs(html, self.HTML_PARSER)
+        return self.__extract(tag_name, attr_key, trace_stack, root)
+
+    def extract_current(self, tag_name=None, attr_key=None):
+        self.tag_name = tag_name
+        self.attr_key = attr_key
+
+        return self.__extract(tag_name, attr_key, self.trace_stack(), self.__root__)
+
+    def export_parse_form(self):
+        """
+        :return: string
+        """
+        ret = {
+            "stack_trace": self.trace_stack(),
+            "tag_name": self.tag_name,
+            "attr_key": self.attr_key,
+            "filter_list": self.filter_list,
+        }
+
+        return json.dumps(ret)
+
+    def import_parse_form(self, parse_form):
+        """
+        :param parse_setting:
+        :return:
+        """
+        setting = json.loads(parse_form)
+        self.parse_form = json.loads(parse_form)
+        pass

@@ -48,7 +48,6 @@ ipcRenderer.on('update_page', (event, args) => {
 })
 
 
-
 // ipc main and renderer
 // http://electron.rocks/different-ways-to-communicate-between-main-and-renderer-process/
 ipcRenderer.send('async', 'to main')

@@ -15,6 +15,7 @@ except Exception as e:
     exit(-1)
 
 import zerorpc
+import traceback
 from types import *
 from main.logger.logger import Logger
 from main.tagExplorer.TagExplorer import TagExplorer as txp
@@ -70,17 +71,23 @@ class PyServer:
         ret = None
         try:
             args = tuple(map(argsMapper, args))
-            if hasattr(txp, cmd):
-                method = getattr(self.txp, cmd)
-                self.log.info(self.txp.__class__.__name__ + ' execute cmd : %s args : %s' % (cmd, argsToStr(args)))
-                ret = method(*args)
+            method = getattr(self.txp, cmd)
+            self.log.info('execute cmd : %s args : %s' % (cmd, argsToStr(args)))
+            ret = method(*args)
 
         except Exception as e:
-            msg = self.txp.__class__.__name__ + ' can not execute %s' % cmd + "\n" + e
+            msg = 'can not execute cmd : %s, args : %s' % (cmd, argsToStr(args)) + "\n" \
+                  + str(e) \
+                  + "\n" + str(traceback.format_exc())
             self.log.error(msg)
             ret = msg
 
         finally:
+            # todo delete yield
+            # not_yield_ret = []
+            # for item in ret:
+            #     not_yield_ret += [item]
+
             return ret
 
     def execute_many(self, *args):
@@ -107,7 +114,6 @@ def main():
     print('start running on {}'.format(addr))
     server.run()
 
-    # TODO pack and unpack packet by json
     # todo test all... please
 
 

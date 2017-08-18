@@ -1,14 +1,15 @@
 import requests
 from bs4 import BeautifulSoup as bs, Comment
 
-try:
-    from main.db.DbContract import *
-    from main.logger.logger import Logger
-    from main.tagExplorer.Tag import Tag
-except ModuleNotFoundError as e:
-    from DbContract import *
-    from logger import Logger
-    from Tag import Tag
+# TODO use adding root directory
+# try:
+#     from main.db.DbContract import *
+#     from main.logger.logger import Logger
+#     from main.tagExplorer.Tag import Tag
+# except ModuleNotFoundError as e:
+#     from DbContract import *
+#     from logger import Logger
+#     from Tag import Tag
 
 HTML_PARSER = 'lxml'
 
