@@ -11,40 +11,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestPyServer.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestPyServer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/TestPyServer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="265" column="84" lean-forward="true" selection-start-line="265" selection-start-column="84" selection-end-line="265" selection-end-column="84" />
+            <state relative-caret-position="1392">
+              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding>
-                <element signature="e#193#391#0" expanded="false" />
-                <element signature="e#419#440#0" expanded="false" />
-                <element signature="e#994#998#0" expanded="false" />
-                <element signature="e#1035#1312#0" expanded="false" />
-                <element signature="e#1110#1208#0" expanded="false" />
-                <element signature="e#1289#1312#0" expanded="false" />
-                <element signature="e#1371#1424#0" expanded="false" />
-                <element signature="e#1458#1462#0" expanded="false" />
-                <element signature="e#3848#3890#0" expanded="false" />
-                <element signature="e#3969#4011#0" expanded="false" />
-                <element signature="e#4088#4289#0" expanded="false" />
-                <element signature="e#4365#4562#0" expanded="false" />
-                <element signature="e#4636#4758#0" expanded="false" />
-                <element signature="e#4836#5241#0" expanded="false" />
-                <element signature="e#4836#4916#0" expanded="false" />
+                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#407#428#0" expanded="false" />
+                <element signature="e#1168#1191#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PyServer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/pyServer/PyServer.py">
+      <file leaf-file-name="TestTagExplorer.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/TestTagExplorer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="121" column="0" lean-forward="true" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+            <state relative-caret-position="856">
+              <caret line="232" column="0" lean-forward="true" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
               <folding>
-                <element signature="e#302#316#0" expanded="true" />
+                <element signature="e#0#27#0" expanded="true" />
+                <element signature="e#1059#3163#0" expanded="false" />
+                <element signature="e#1059#1139#0" expanded="false" />
+                <element signature="e#3290#3325#0" expanded="false" />
+                <element signature="e#3385#3481#0" expanded="false" />
+                <element signature="e#3545#3631#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nontrivial.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/nose/tools/nontrivial.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3624">
+              <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="util.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/nose/util.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11280">
+              <caret line="479" column="23" lean-forward="false" selection-start-line="479" selection-start-column="23" selection-end-line="479" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test_banch_code.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/Test_banch_code.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,11 +75,10 @@
       <file leaf-file-name="TagExplorer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/tagExplorer/TagExplorer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state relative-caret-position="696">
+              <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
               <folding>
                 <element signature="e#0#61#0" expanded="true" />
-                <element signature="e#325#773#0" expanded="false" />
                 <element signature="e#325#409#1" expanded="false" />
                 <element signature="e#807#863#0" expanded="false" />
                 <element signature="e#896#923#0" expanded="false" />
@@ -86,22 +108,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/pyServer/log/log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="1124" column="0" lean-forward="false" selection-start-line="1124" selection-start-column="0" selection-end-line="1124" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>is</find>
-      <find>is</find>
+      <find>open</find>
+      <find>set</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -129,19 +149,21 @@
         <option value="$PROJECT_DIR$/main/tagExplorer/HardParser.py" />
         <option value="$PROJECT_DIR$/main/banchCode.py" />
         <option value="$PROJECT_DIR$/main/Interface.py" />
-        <option value="$PROJECT_DIR$/test/TestTagExplorer.py" />
         <option value="$PROJECT_DIR$/main/pyServer/log/log" />
         <option value="$PROJECT_DIR$/main/pyServer/PyServer.py" />
         <option value="$PROJECT_DIR$/main/tagExplorer/TagExplorer.py" />
+        <option value="$PROJECT_DIR$/test/banch_code.py" />
+        <option value="$PROJECT_DIR$/test/Test_banch_code.py" />
         <option value="$PROJECT_DIR$/test/TestPyServer.py" />
+        <option value="$PROJECT_DIR$/test/TestTagExplorer.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1080" />
+    <option name="x" value="1355" />
     <option name="y" value="692" />
-    <option name="width" value="1920" />
-    <option name="height" value="1084" />
+    <option name="width" value="1078" />
+    <option name="height" value="1032" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -211,6 +233,9 @@
       <pane id="Scratches" />
     </panes>
   </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test/TestTagExplorer.py" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -223,67 +248,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Nosetests in TestPyServer.py">
-    <configuration name="Nosetests for TestPyServer.TestPyServerConnection.test_01_help" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pyside" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;TestPyServer.TestPyServerConnection.test_01_help&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
-    <configuration name="Nosetests for TestPyServer.TestPyServerTest" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pyside" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;TestPyServer.TestPyServerTest&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
-    <configuration name="Nosetests in TestPyServer.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pyside" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/TestPyServer.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
-    <configuration name="Nosetests in TestTagExplorer.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pyside" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/TestTagExplorer.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
+  <component name="RunManager" selected="Python.PyServer">
     <configuration name="PyServer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -300,6 +265,21 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="TestTagExplorer.py" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pyside" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/TestTagExplorer.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -391,38 +371,13 @@
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="pyserver" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="my_web_crowler" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/server/pyServer.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Python.pyserver" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Python tests.TestTagExplorer.py" />
       <item index="1" class="java.lang.String" itemvalue="Python.PyServer" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests in TestTagExplorer.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests in TestPyServer.py" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetests for TestPyServer.TestPyServerTest" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.Nosetests for TestPyServer.TestPyServerConnection.test_01_help" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in TestPyServer.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetests for TestPyServer.TestPyServerTest" />
-        <item index="2" class="java.lang.String" itemvalue="Python.PyServer" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests for TestPyServer.TestPyServerConnection.test_01_help" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Nosetests in TestTagExplorer.py" />
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.PyServer" />
       </list>
     </recent_temporary>
   </component>
@@ -443,41 +398,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetests_in_TestPyServer_py - 2017.08.18 at 16h 27m 28s.xml">
-      <configuration name="Nosetests in TestPyServer.py" configurationId="tests" />
+    <history-entry file="TestTagExplorer_py - 2017.08.20 at 03h 20m 05s.xml">
+      <configuration name="TestTagExplorer.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_TestPyServer_py - 2017.08.18 at 16h 33m 14s.xml">
-      <configuration name="Nosetests in TestPyServer.py" configurationId="tests" />
+    <history-entry file="TestTagExplorer_py - 2017.08.20 at 03h 22m 08s.xml">
+      <configuration name="TestTagExplorer.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_TestPyServer_py - 2017.08.18 at 19h 05m 13s.xml">
-      <configuration name="Nosetests in TestPyServer.py" configurationId="tests" />
+    <history-entry file="TestTagExplorer_py - 2017.08.20 at 03h 23m 04s.xml">
+      <configuration name="TestTagExplorer.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_TestPyServer_py - 2017.08.18 at 19h 05m 33s.xml">
-      <configuration name="Nosetests in TestPyServer.py" configurationId="tests" />
+    <history-entry file="TestTagExplorer_py - 2017.08.20 at 03h 23m 44s.xml">
+      <configuration name="TestTagExplorer.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_TestPyServer_py - 2017.08.18 at 19h 21m 01s.xml">
-      <configuration name="Nosetests in TestPyServer.py" configurationId="tests" />
+    <history-entry file="TestTagExplorer_py - 2017.08.20 at 03h 24m 24s.xml">
+      <configuration name="TestTagExplorer.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_TestPyServer_py - 2017.08.18 at 19h 22m 35s.xml">
-      <configuration name="Nosetests in TestPyServer.py" configurationId="tests" />
+    <history-entry file="TestTagExplorer_py - 2017.08.20 at 03h 25m 46s.xml">
+      <configuration name="TestTagExplorer.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_TestPyServer_py - 2017.08.18 at 19h 22m 39s.xml">
-      <configuration name="Nosetests in TestPyServer.py" configurationId="tests" />
+    <history-entry file="TestTagExplorer_py - 2017.08.20 at 03h 26m 51s.xml">
+      <configuration name="TestTagExplorer.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_TestPyServer_py - 2017.08.18 at 19h 23m 34s.xml">
-      <configuration name="Nosetests in TestPyServer.py" configurationId="tests" />
+    <history-entry file="TestTagExplorer_py - 2017.08.20 at 03h 32m 35s.xml">
+      <configuration name="TestTagExplorer.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_TestPyServer_py - 2017.08.18 at 19h 25m 00s.xml">
-      <configuration name="Nosetests in TestPyServer.py" configurationId="tests" />
+    <history-entry file="TestTagExplorer_py - 2017.08.20 at 03h 33m 23s.xml">
+      <configuration name="TestTagExplorer.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_in_TestPyServer_py - 2017.08.18 at 19h 27m 36s.xml">
-      <configuration name="Nosetests in TestPyServer.py" configurationId="tests" />
+    <history-entry file="TestTagExplorer_py - 2017.08.20 at 03h 37m 40s.xml">
+      <configuration name="TestTagExplorer.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1080" y="692" width="1922" height="1092" extended-state="6" />
+    <frame x="1080" y="692" width="1920" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.258547" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22382478" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.50213677" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32884398" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -522,7 +478,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test/TestTagExplorer.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -533,15 +496,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main/draw.py" />
-    <entry file="file://$PROJECT_DIR$/main/qwefwef.py" />
-    <entry file="file://$PROJECT_DIR$/main/db/DbHelper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/draw.py" />
     <entry file="file://$PROJECT_DIR$/main/qwefwef.py" />
     <entry file="file://$PROJECT_DIR$/main/db/DbHelper.py">
@@ -684,7 +638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -723,18 +676,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/TestTagExplorer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/pyServer/log/log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="26976">
           <caret line="1124" column="0" lean-forward="false" selection-start-line="1124" selection-start-column="0" selection-end-line="1124" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -742,27 +687,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/pyServer/PyServer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="121" column="0" lean-forward="true" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-          <folding>
-            <element signature="e#302#316#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="856">
+          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/tagExplorer/TagExplorer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+        <state relative-caret-position="696">
+          <caret line="33" column="22" lean-forward="false" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
           <folding>
             <element signature="e#0#61#0" expanded="true" />
-            <element signature="e#325#773#0" expanded="false" />
             <element signature="e#325#409#1" expanded="false" />
             <element signature="e#807#863#0" expanded="false" />
             <element signature="e#896#923#0" expanded="false" />
@@ -791,26 +731,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/Test_banch_code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/TestPyServer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="265" column="84" lean-forward="true" selection-start-line="265" selection-start-column="84" selection-end-line="265" selection-end-column="84" />
+        <state relative-caret-position="1392">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding>
-            <element signature="e#193#391#0" expanded="false" />
-            <element signature="e#419#440#0" expanded="false" />
-            <element signature="e#994#998#0" expanded="false" />
-            <element signature="e#1035#1312#0" expanded="false" />
-            <element signature="e#1110#1208#0" expanded="false" />
-            <element signature="e#1289#1312#0" expanded="false" />
-            <element signature="e#1371#1424#0" expanded="false" />
-            <element signature="e#1458#1462#0" expanded="false" />
-            <element signature="e#3848#3890#0" expanded="false" />
-            <element signature="e#3969#4011#0" expanded="false" />
-            <element signature="e#4088#4289#0" expanded="false" />
-            <element signature="e#4365#4562#0" expanded="false" />
-            <element signature="e#4636#4758#0" expanded="false" />
-            <element signature="e#4836#5241#0" expanded="false" />
-            <element signature="e#4836#4916#0" expanded="false" />
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#407#428#0" expanded="false" />
+            <element signature="e#1168#1191#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/nose/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11280">
+          <caret line="479" column="23" lean-forward="false" selection-start-line="479" selection-start-column="23" selection-end-line="479" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/nose/tools/nontrivial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3624">
+          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/TestTagExplorer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="856">
+          <caret line="232" column="0" lean-forward="true" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#1059#3163#0" expanded="false" />
+            <element signature="e#1059#1139#0" expanded="false" />
+            <element signature="e#3290#3325#0" expanded="false" />
+            <element signature="e#3385#3481#0" expanded="false" />
+            <element signature="e#3545#3631#0" expanded="false" />
           </folding>
         </state>
       </provider>
