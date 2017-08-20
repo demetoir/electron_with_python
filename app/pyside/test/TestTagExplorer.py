@@ -1,295 +1,229 @@
-from nose import with_setup
+from main.Chain import Chain
+from main.logger.logger import Logger
 from main.tagExplorer.TagExplorer import TagExplorer
-from main.util.util import *
-import sys
 
 URL_SITE = """http://bbs.ruliweb.com/best/humor?&page=%d"""
 
 # test resource
 TEST_URL = "http://bbs.ruliweb.com/best/humor?&page=1"
 
-ENDL = '\n'
-is_logging = True
-txp = None
 
+class TestTagExplorer:
+    logger = None
+    log = None
+    chain = None
+    chaining = None
 
-def log(var):
-    global is_logging
-    if is_logging:
-        try:
-            sys.stdout.write(str(type(var)) + ENDL)
-            if type(var) is str:
-                sys.stdout.write(str(var) + ENDL)
-            else:
-                for item in var:
-                    sys.stdout.write(str(item) + ENDL)
-        except Exception as e:
-            print(e)
-        finally:
-            print()
-
-
-def setup_f(fn):
-    def wrapped():
-        print('setup_f', fn.__name__)
-        global is_logging, txp
-        is_logging = False
-        ret = fn()
-        txp = ret
-        is_logging = True
-
-        return ret
-
-    return wrapped
-
-
-def setup():
-    pass
-
-
-def teardown():
-    global txp
     txp = None
-    print('teardown')
-    pass
-
-
-def exploring():
-    # connect_zerorpc('execute', 'set_filter', 'head', 'script', 'header', 'footer',
-    #                 'noscript', 'comment', 'NavigableString')
-    #
-    # connect_zerorpc('execute', 'trace_stack')
-    # connect_zerorpc('execute', 'children_tag')
-    # connect_zerorpc('execute', 'move_down', '7')
-    #
-    # connect_zerorpc('execute', 'trace_stack')
-    # connect_zerorpc('execute', 'children_tag')
-    # connect_zerorpc('execute', 'move_down', '5')
-    #
-    # connect_zerorpc('execute', 'trace_stack')
-    # connect_zerorpc('execute', 'children_tag')
-    # connect_zerorpc('execute', 'move_down', '7')
-    #
-    # connect_zerorpc('execute', 'trace_stack')
-    # connect_zerorpc('execute', 'children_tag')
-    # connect_zerorpc('execute', 'move_down', '7')
-    #
-    # connect_zerorpc('execute', 'trace_stack')
-    # connect_zerorpc('execute', 'children_tag')
-    # connect_zerorpc('execute', 'move_down', '1')
-    #
-    # connect_zerorpc('execute', 'trace_stack')
-    # connect_zerorpc('execute', 'children_tag')
-    # connect_zerorpc('execute', 'move_down', '3')
-    #
-    # connect_zerorpc('execute', 'trace_stack')
-    # connect_zerorpc('execute', 'children_tag')
-    # connect_zerorpc('execute', 'move_down', '1')
-    #
-    # connect_zerorpc('execute', 'trace_stack')
-    # connect_zerorpc('execute', 'children_tag')
-    # connect_zerorpc('execute', 'move_down', '5')
-    #
-    # connect_zerorpc('execute', 'trace_stack')
-    # connect_zerorpc('execute', 'children_tag')
-    # connect_zerorpc('execute', 'move_down', '1')
-    #
-    # connect_zerorpc('execute', 'trace_stack')
-    # connect_zerorpc('execute', 'children_tag')
-    # connect_zerorpc('execute', 'move_down', '5')
-    #
-    # connect_zerorpc('execute', 'trace_stack')
-    # connect_zerorpc('execute', 'children_tag')
-    # connect_zerorpc('execute', 'move_down', '1')
-    #
-    # connect_zerorpc('execute', 'trace_stack')
-    # connect_zerorpc('execute', 'children_tag')
-    # connect_zerorpc('execute', 'move_down', '3')
-    #
-    # connect_zerorpc('execute', 'trace_stack')
-    # connect_zerorpc('execute', 'children_tag')
-    pass
 
+    def setup(self):
+        self.logger = Logger(self.__class__.__name__, stdout_only=True, simple=True)
+        self.log = self.logger.var_log
+
+        self.chain = Chain(enter=self.logger.disable, exit_=self.logger.enable)
+        self.chaining = self.chain.chaining
+
+        # print('setup')
+        self.txp = TagExplorer()
+
+    def teardown(self):
+        # print('teardown')
+        self.chain = None
+        self.chaining = None
+
+    def __init__(self):
+        self.chain = None
+        self.chaining = None
+
+    def exploring(self):
+        # connect_zerorpc('execute', 'set_filter', 'head', 'script', 'header', 'footer',
+        #                 'noscript', 'comment', 'NavigableString')
+        #
+        # connect_zerorpc('execute', 'trace_stack')
+        # connect_zerorpc('execute', 'children_tag')
+        # connect_zerorpc('execute', 'move_down', '7')
+        #
+        # connect_zerorpc('execute', 'trace_stack')
+        # connect_zerorpc('execute', 'children_tag')
+        # connect_zerorpc('execute', 'move_down', '5')
+        #
+        # connect_zerorpc('execute', 'trace_stack')
+        # connect_zerorpc('execute', 'children_tag')
+        # connect_zerorpc('execute', 'move_down', '7')
+        #
+        # connect_zerorpc('execute', 'trace_stack')
+        # connect_zerorpc('execute', 'children_tag')
+        # connect_zerorpc('execute', 'move_down', '7')
+        #
+        # connect_zerorpc('execute', 'trace_stack')
+        # connect_zerorpc('execute', 'children_tag')
+        # connect_zerorpc('execute', 'move_down', '1')
+        #
+        # connect_zerorpc('execute', 'trace_stack')
+        # connect_zerorpc('execute', 'children_tag')
+        # connect_zerorpc('execute', 'move_down', '3')
+        #
+        # connect_zerorpc('execute', 'trace_stack')
+        # connect_zerorpc('execute', 'children_tag')
+        # connect_zerorpc('execute', 'move_down', '1')
+        #
+        # connect_zerorpc('execute', 'trace_stack')
+        # connect_zerorpc('execute', 'children_tag')
+        # connect_zerorpc('execute', 'move_down', '5')
+        #
+        # connect_zerorpc('execute', 'trace_stack')
+        # connect_zerorpc('execute', 'children_tag')
+        # connect_zerorpc('execute', 'move_down', '1')
+        #
+        # connect_zerorpc('execute', 'trace_stack')
+        # connect_zerorpc('execute', 'children_tag')
+        # connect_zerorpc('execute', 'move_down', '5')
+        #
+        # connect_zerorpc('execute', 'trace_stack')
+        # connect_zerorpc('execute', 'children_tag')
+        # connect_zerorpc('execute', 'move_down', '1')
+        #
+        # connect_zerorpc('execute', 'trace_stack')
+        # connect_zerorpc('execute', 'children_tag')
+        # connect_zerorpc('execute', 'move_down', '3')
+        #
+        # connect_zerorpc('execute', 'trace_stack')
+        # connect_zerorpc('execute', 'children_tag')
+        pass
+
+    def set_filter(self, txp, *args):
+        txp.set_filter(*args)
+        return txp
+
+    def test_00_init(self):
+        self.chaining(None)
+        self.txp = TagExplorer()
+
+    def test_01_set_root(self):
+        self.chaining(self.test_00_init)
+        self.txp.set_root(TEST_URL)
+
+        # todo ....
+        assert True
+
+    def test_02_current_html(self):
+        self.chaining(self.test_01_set_root)
+        ret = self.txp.current_html()
+        self.log(ret)
+        assert True
+
+    def test_03_children_tag(self):
+        self.chaining(self.test_01_set_root)
+        ret = self.txp.children_tag()
+        self.log(ret)
 
-def set_filter(txp, *args):
-    txp.set_filter(*args)
-    return txp
+        assert True
 
+    def test_04_set_filter(self):
+        self.chaining(self.test_01_set_root)
 
-@with_setup(setup, teardown)
-def test_00_init():
-    txp = TagExplorer()
+        before = self.txp.children_tag()
 
-    return txp
+        self.txp.set_filter('comment')
 
+        after = self.txp.children_tag()
 
-@with_setup(setup, teardown)
-def test_01_set_root():
-    txp = test_00_init()
-    txp.set_root(TEST_URL)
+        self.log(before)
+        self.log(after)
 
-    # todo ....
-    assert True
+        assert before != after
 
-    return txp
+    def test_05_move_down(self):
+        self.chaining(self.test_04_set_filter())
+        before = self.txp.children_tag()
 
+        self.txp.move_down(7)
 
-@with_setup(setup, teardown)
-def test_02_current_html():
-    txp = test_01_set_root()
-    ret = txp.current_html()
+        after = self.txp.children_tag()
 
-    assert True
+        self.log(before)
+        self.log(after)
 
-    return txp
+        assert before != after
 
+    def test_06_move_up(self):
+        self.chaining(self.test_04_set_filter)
 
-@with_setup(setup, teardown)
-def test_03_children_tag():
-    txp = test_01_set_root()
-    ret = txp.children_tag()
-    log(ret)
+        self.txp.move_down(7)
+        before = self.txp.children_tag()
 
-    assert True
+        self.txp.move_up()
 
-    return txp
+        after = self.txp.children_tag()
 
+        self.log(before)
+        self.log(after)
 
-@with_setup(setup, teardown)
-def test_04_set_filter():
-    txp = test_01_set_root()
+        assert before != after
 
-    before = txp.children_tag()
+    def test_07_trace_stack(self):
+        self.chaining(self.test_04_set_filter)
 
-    txp.set_filter('comment')
+        self.txp.set_filter('execute', 'set_filter', 'head', 'script', 'header', 'footer',
+                            'noscript', 'comment', 'NavigableString')
 
-    after = txp.children_tag()
+        before = self.txp.trace_stack()
+        self.txp.children_tag()
+        self.txp.move_down(7)
+        self.txp.trace_stack()
 
-    log(before)
-    log(after)
+        after = self.txp.trace_stack()
+        self.txp.children_tag()
 
-    assert before != after
+        self.log(before)
+        self.log(after)
 
-    return txp
+        assert before != after
 
+    def test_08_exploring(self):
+        self.chaining(self.test_04_set_filter)
+        self.txp.set_filter('execute', 'set_filter', 'head', 'script', 'header', 'footer',
+                            'noscript', 'comment', 'NavigableString')
 
-@with_setup(setup_f(test_01_set_root), teardown)
-def test_05_move_down():
-    global txp
+        move_down_list = [7, 5, 7, 7, 1, 3, 1, 5, 1, 5, 1, 3]
+        for idx in move_down_list:
+            trace_stack = self.txp.trace_stack()
+            children_tag = self.txp.children_tag()
+            self.txp.move_down(idx)
+            self.log(trace_stack)
+            self.log(children_tag)
 
-    before = txp.children_tag()
+        trace_stack = self.txp.trace_stack()
+        self.log(trace_stack)
+        children_tag = self.txp.children_tag()
+        self.log(children_tag)
 
-    txp.move_down(7)
+        ret = self.txp.current_html()
+        self.log(ret)
 
-    after = txp.children_tag()
+    def test_09_extract_current(self):
+        self.chaining(self.test_08_exploring)
+        ret = self.txp.extract_current()
+        self.log(ret)
 
-    log(before)
-    log(after)
+        ret = self.txp.extract_current('a', 'href')
+        self.log(ret)
 
-    assert before != after
-    return txp
+    def test_10_export_parse_form(self):
+        self.chaining(self.test_09_extract_current)
+        ret = self.txp.export_parse_form()
+        self.log(ret)
 
+    def test_11_import_parse_form(self):
+        self.chaining(self.test_10_export_parse_form)
+        parse_form = self.txp.export_parse_form()
+        self.log(parse_form)
+        parse_form = str(parse_form)
 
-@with_setup(setup_f(test_01_set_root), teardown)
-def test_06_move_up():
-    global txp
+        self.txp.import_parse_form(parse_form)
 
-    txp.move_down(7)
-    before = txp.children_tag()
-
-    txp.move_up()
-
-    after = txp.children_tag()
-
-    log(before)
-    log(after)
-
-    assert before != after
-    return txp
-
-
-@with_setup(setup_f(test_01_set_root), teardown)
-def test_07_trace_stack():
-    global txp
-    txp.set_filter('execute', 'set_filter', 'head', 'script', 'header', 'footer',
-                   'noscript', 'comment', 'NavigableString')
-
-    before = txp.trace_stack()
-    txp.children_tag()
-    txp.move_down(7)
-    txp.trace_stack()
-
-    after = txp.trace_stack()
-    txp.children_tag()
-
-    log(before)
-    log(after)
-
-    assert before != after
-    return txp
-
-
-@with_setup(setup_f(test_01_set_root), teardown)
-def test_08_exploring():
-    global txp
-    txp.set_filter('execute', 'set_filter', 'head', 'script', 'header', 'footer',
-                   'noscript', 'comment', 'NavigableString')
-
-    move_down_list = [7, 5, 7, 7, 1, 3, 1, 5, 1, 5, 1, 3]
-    for idx in move_down_list:
-        trace_stack = txp.trace_stack()
-        children_tag = txp.children_tag()
-        txp.move_down(idx)
-        log(trace_stack)
-        log(children_tag)
-
-    trace_stack = txp.trace_stack()
-    log(trace_stack)
-    children_tag = txp.children_tag()
-    log(children_tag)
-
-    ret = txp.current_html()
-    log(ret)
-
-    return txp
-
-
-@with_setup(setup_f(test_08_exploring), teardown)
-def test_09_extract_current():
-    global txp
-
-    ret = txp.extract_current()
-    log(ret)
-
-    ret = txp.extract_current('a', 'href')
-    log(ret)
-
-    return txp
-
-
-@with_setup(setup_f(test_09_extract_current), teardown)
-def test_10_export_parse_form():
-    global txp
-    ret = txp.export_parse_form()
-    log(ret)
-    return txp
-
-
-@with_setup(setup_f(test_09_extract_current), teardown)
-def test_11_import_parse_form():
-    global txp
-    parse_form = txp.export_parse_form()
-    log(parse_form)
-    parse_form = str(parse_form)
-
-    txp.import_parse_form(parse_form)
-
-    return txp
-
-
-@with_setup(setup_f(test_11_import_parse_form), teardown)
-def test_12_extract_from_parse_form():
-    global txp
-    ret = txp.extract_from_parse_form(TEST_URL)
-    log(ret)
-    pass
+    def test_12_extract_from_parse_form(self):
+        self.chaining(self.test_11_import_parse_form)
+        ret = self.txp.extract_from_parse_form(TEST_URL)
+        self.log(ret)
+        pass
