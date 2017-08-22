@@ -1,5 +1,4 @@
-from main.Chain import Chain
-from main.logger.logger import Logger
+from main.BaseTest import BaseTest
 from main.tagExplorer.TagExplorer import TagExplorer
 
 URL_SITE = """http://bbs.ruliweb.com/best/humor?&page=%d"""
@@ -8,90 +7,11 @@ URL_SITE = """http://bbs.ruliweb.com/best/humor?&page=%d"""
 TEST_URL = "http://bbs.ruliweb.com/best/humor?&page=1"
 
 
-class TestTagExplorer:
-    logger = None
-    log = None
-    chain = None
-    chaining = None
-
+class TestTagExplorer(BaseTest):
     txp = None
 
-    def setup(self):
-        self.logger = Logger(self.__class__.__name__, stdout_only=True, simple=True)
-        self.log = self.logger.var_log
-
-        self.chain = Chain(enter=self.logger.disable, exit_=self.logger.enable)
-        self.chaining = self.chain.chaining
-
-        # print('setup')
-        self.txp = TagExplorer()
-
-    def teardown(self):
-        # print('teardown')
-        self.chain = None
-        self.chaining = None
-
-    def __init__(self):
-        self.chain = None
-        self.chaining = None
-
-    def exploring(self):
-        # connect_zerorpc('execute', 'set_filter', 'head', 'script', 'header', 'footer',
-        #                 'noscript', 'comment', 'NavigableString')
-        #
-        # connect_zerorpc('execute', 'trace_stack')
-        # connect_zerorpc('execute', 'children_tag')
-        # connect_zerorpc('execute', 'move_down', '7')
-        #
-        # connect_zerorpc('execute', 'trace_stack')
-        # connect_zerorpc('execute', 'children_tag')
-        # connect_zerorpc('execute', 'move_down', '5')
-        #
-        # connect_zerorpc('execute', 'trace_stack')
-        # connect_zerorpc('execute', 'children_tag')
-        # connect_zerorpc('execute', 'move_down', '7')
-        #
-        # connect_zerorpc('execute', 'trace_stack')
-        # connect_zerorpc('execute', 'children_tag')
-        # connect_zerorpc('execute', 'move_down', '7')
-        #
-        # connect_zerorpc('execute', 'trace_stack')
-        # connect_zerorpc('execute', 'children_tag')
-        # connect_zerorpc('execute', 'move_down', '1')
-        #
-        # connect_zerorpc('execute', 'trace_stack')
-        # connect_zerorpc('execute', 'children_tag')
-        # connect_zerorpc('execute', 'move_down', '3')
-        #
-        # connect_zerorpc('execute', 'trace_stack')
-        # connect_zerorpc('execute', 'children_tag')
-        # connect_zerorpc('execute', 'move_down', '1')
-        #
-        # connect_zerorpc('execute', 'trace_stack')
-        # connect_zerorpc('execute', 'children_tag')
-        # connect_zerorpc('execute', 'move_down', '5')
-        #
-        # connect_zerorpc('execute', 'trace_stack')
-        # connect_zerorpc('execute', 'children_tag')
-        # connect_zerorpc('execute', 'move_down', '1')
-        #
-        # connect_zerorpc('execute', 'trace_stack')
-        # connect_zerorpc('execute', 'children_tag')
-        # connect_zerorpc('execute', 'move_down', '5')
-        #
-        # connect_zerorpc('execute', 'trace_stack')
-        # connect_zerorpc('execute', 'children_tag')
-        # connect_zerorpc('execute', 'move_down', '1')
-        #
-        # connect_zerorpc('execute', 'trace_stack')
-        # connect_zerorpc('execute', 'children_tag')
-        # connect_zerorpc('execute', 'move_down', '3')
-        #
-        # connect_zerorpc('execute', 'trace_stack')
-        # connect_zerorpc('execute', 'children_tag')
-        pass
-
-    def set_filter(self, txp, *args):
+    @staticmethod
+    def set_filter(txp, *args):
         txp.set_filter(*args)
         return txp
 

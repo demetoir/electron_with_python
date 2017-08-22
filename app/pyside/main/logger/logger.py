@@ -32,11 +32,6 @@ class Logger(metaclass=Singleton):
     def __init__(self, logger_name, stdout_only=False, simple=False):
         self.log = logging.getLogger(logger_name)
         self.log.setLevel(logging.DEBUG)
-        # make dir for log path
-        if not path.exists(self.LOG_PATH):
-            os.makedirs(self.LOG_PATH)
-
-        self.LOG_FULL_PATH = path.join(self.LOG_PATH, self.LOG_FOLDER_NAME)
 
         if simple:
             formatter = logging.Formatter(self.LOG_SIMPLE_FORMAT)
@@ -50,6 +45,11 @@ class Logger(metaclass=Singleton):
             self.log.addHandler(self.stream_handler)
             pass
         else:
+            # make dir for log path
+            if not path.exists(self.LOG_PATH):
+                os.makedirs(self.LOG_PATH)
+            self.LOG_FULL_PATH = path.join(self.LOG_PATH, self.LOG_FOLDER_NAME)
+
             # add file handler
             self.file_handler = logging.FileHandler(self.LOG_FULL_PATH)
             self.file_handler.setFormatter(formatter)
@@ -63,10 +63,9 @@ class Logger(metaclass=Singleton):
             line_num = st[2]
             call_f = st[3]
             code = " ".join(st[4][0].split())
-            var_name = code.replace('self.log(', '').replace(')', '')
-            msg = None
+            var_name = code.replace('self.log(', '')[:-1]
+            msg = ''
             try:
-                msg = ''
                 msg += '%s(%s) | %s : %s\n' % (call_f, line_num, var_name, str(type(var)))
 
                 if type(var) is str:

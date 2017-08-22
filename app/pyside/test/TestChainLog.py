@@ -1,64 +1,7 @@
-from main.Chain import Chain
-from main.logger.logger import Logger
+from main.BaseTest import BaseTest
 
 
-def deco(fn):
-    def wrapped():
-        print('deco')
-        return fn()
-
-    return wrapped
-
-class TestChainLog:
-    logger = None
-    log = None
-    chain = None
-    chaining = None
-
-    def setup(self):
-        self.logger = Logger(TestChainLog.__name__, stdout_only=True, simple=True)
-        self.log = self.logger.var_log
-
-        self.chain = Chain(enter=self.logger.disable, exit_=self.logger.enable)
-        self.chaining = self.chain.chaining
-        print('setup')
-
-        # # below method any one work so i use singleton or global variable
-        # @classmethod
-        # def setupClass(cls):
-        #     print('setupClass')
-        #
-        # @classmethod
-        # def setUpClass(cls):
-        #     print('setUpClass')
-        #
-        # @classmethod
-        # def setupAll(cls):
-        #     print('setupAll')
-        #
-        # @classmethod
-        # def setUpAll(cls):
-        #     print('selfUpAll')
-        #
-        # @classmethod
-        # def setup_class(cls):
-        #     """This method is run once for each class before any tests are run"""
-        #     print('class  setup')
-        #
-        # @classmethod
-        # def teardown_class(cls):
-        #     """This method is run once for each class _after_ all tests are run"""
-        #     print('class teardown')
-
-    def teardown(self):
-        print('teardown')
-        self.chain = None
-        self.chaining = None
-
-    def __init__(self):
-        self.chain = None
-        self.chaining = None
-
+class TestChainLog(BaseTest):
     def test_chain1(self):
         self.chaining(None, None)
         print('test chain 1')
@@ -102,12 +45,24 @@ class TestChainLog:
         print('test deco chain 1')
         self.log(1)
 
-    @deco
     def test_chain_deco2(self):
         print('test deco chain 2')
-        self.log(2)
+        # self.log(2)
 
-    @deco
     def test_chain_deco3(self):
         print('test deco chain 3')
-        self.log(3)
+        # self.log(3)
+
+
+class TestChild(BaseTest):
+    def test_child_chain1(self):
+        self.chaining(None)
+        print('child chain test 1')
+        self.log(-1)
+
+    def test_child_chain2(self):
+        self.chaining(self.test_child_chain1())
+        print('child chain test 2')
+        a = float
+        self.log(-2)
+        self.log(a)

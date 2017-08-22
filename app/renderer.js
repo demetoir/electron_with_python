@@ -26,7 +26,7 @@ let tag_number = document.querySelector('#tag_number')
 let trace_stack = document.querySelector('#stack_trace')
 
 btn_back.addEventListener('click', ()=>{
-    client.invoke('back', )
+    client.invoke('back', 0)
     // ipcRenderer.send('back', 0)
 })
 

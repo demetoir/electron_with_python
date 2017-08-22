@@ -37,13 +37,6 @@ class PyServer:
         return self.__class__.__name__
 
     def echo(self, text):
-        """
-        echo any text
-
-        :param text : str
-
-        :return: str
-        """
         self.log.info(text)
         return text
 
@@ -53,11 +46,11 @@ class PyServer:
 
         :return: list
         """
-        msg = """txp cmd list \n"""
+        ret = []
         for attr in txp.__dict__:
             if type(getattr(txp, attr)) is FunctionType:
-                msg += attr + " "
-        return msg
+                ret += [attr]
+        return ret
 
     def execute(self, cmd, *args):
         """

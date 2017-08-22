@@ -1,7 +1,6 @@
 from bs4 import BeautifulSoup as bs, Comment, NavigableString
 import requests
 from main.logger.logger import Logger
-import queue
 import json
 
 
@@ -32,9 +31,6 @@ class TagExplorer(object):
         self.filter_list = filter_list
         if url is not None:
             self.set_root(url)
-
-    def __repr__(self):
-        return "%s url:%s" % (self.__class__.__name__, self.url)
 
     def __len__(self):
         return len(self.stack_soup)
@@ -230,7 +226,6 @@ class TagExplorer(object):
 
     def export_parse_form(self):
         """
-        :return: string
         """
         ret = {
             "stack_trace": self.trace_stack(),
@@ -242,10 +237,4 @@ class TagExplorer(object):
         return json.dumps(ret)
 
     def import_parse_form(self, parse_form):
-        """
-        :param parse_setting:
-        :return:
-        """
-        setting = json.loads(parse_form)
         self.parse_form = json.loads(parse_form)
-        pass

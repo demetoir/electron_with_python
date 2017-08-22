@@ -1,5 +1,7 @@
 import zerorpc
 from nose import with_setup
+
+from main.BaseTest import BaseTest
 from main.util.util import *
 
 URL_SITE = """http://bbs.ruliweb.com/best/humor?&page=1"""
@@ -20,42 +22,31 @@ except Exception as e:
     exit(-1)
 
 
-# TODO add assertion
-def connect_zerorpc(cmd, *args, print_=False):
+def connect_zerorpc(cmd, *args):
     conn = zerorpc.Client()
     conn.connect("tcp://127.0.0.1:4242")
     method = getattr(conn, cmd)
     ret = method(*args)
     conn.close()
 
-    if print_:
-        print('cmd : %s , args : %s ' % (cmd, argsToStr(args)))
-        if type(ret) is list:
-            for i in ret:
-                print(i)
-        else:
-            print(ret)
-        print()
-
     return ret
 
 
-def setup():
-    print('setup')
-    pass
+class TestPyServer(BaseTest):
+    def test00_echo(self):
+        args = ('echo', """ '1', 2, 3, "4" """)
+        # ret = connect_zerorpc('echo', """ '1', 2, 3, "4" """)
+        ret = connect_zerorpc(*args)
+        self.log(ret)
+        assert ret == """ '1', 2, 3, "4" """
+
+    def test01_help(self):
+        ret = connect_zerorpc('help')
+
+        self.log(ret)
 
 
-def teardown():
-    print('teardown')
-    pass
+    def test02_execute(self):
+        args = ('execute', '')
 
-
-@with_setup(setup, teardown)
-def test_00_echo():
-    ret = connect_zerorpc('echo', """ '1', 2, 3, "4" """)
-    assert ret == """ '1', 2, 3, "4" """
-
-
-@with_setup(setup, teardown)
-def test_01_help():
-    connect_zerorpc('help')
+        pass
