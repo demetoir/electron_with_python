@@ -17,6 +17,12 @@ client.invoke('echo', 'pyServer ready', function (error, res) {
     }
 })
 
+client.invoke('help',function (error, res) {
+    console.log(res)
+})
+
+
+
 let html_address = document.querySelector('#html_address')
 let html_output = document.querySelector('#html_output')
 let tag_list = document.querySelector('#tag_list')
@@ -25,15 +31,14 @@ let btn_back = document.querySelector('#back')
 let tag_number = document.querySelector('#tag_number')
 let trace_stack = document.querySelector('#stack_trace')
 
-btn_back.addEventListener('click', ()=>{
+btn_back.addEventListener('click', () => {
     client.invoke('back', 0)
     // ipcRenderer.send('back', 0)
 })
 
-btn_go.addEventListener('click', ()=>{
+btn_go.addEventListener('click', () => {
     // ipcRenderer.send('go', tag_number.value)
 })
-
 
 html_address.addEventListener('input', () => {
     ipcRenderer.send('update_html_address', html_address.value)
@@ -46,7 +51,6 @@ ipcRenderer.on('update_page', (event, args) => {
     html_output.textContent = args[0]
     tag_list.textContent = args[1]
 })
-
 
 // ipc main and renderer
 // http://electron.rocks/different-ways-to-communicate-between-main-and-renderer-process/

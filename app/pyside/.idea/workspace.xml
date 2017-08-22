@@ -14,8 +14,8 @@
       <file leaf-file-name="TestPyServer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/TestPyServer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="784">
-              <caret line="49" column="29" lean-forward="true" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+            <state relative-caret-position="792">
+              <caret line="49" column="29" lean-forward="false" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
               <folding>
                 <element signature="e#217#415#0" expanded="false" />
                 <element signature="e#443#464#0" expanded="false" />
@@ -27,9 +27,22 @@
       <file leaf-file-name="PyServer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/pyServer/PyServer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="98" selection-end-column="31" />
-              <folding />
+            <state relative-caret-position="1992">
+              <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="99" selection-end-column="31" />
+              <folding>
+                <marker date="1503396643000" expanded="true" signature="498:2447" ph="..." />
+                <marker date="1503396643000" expanded="true" signature="963:1236" ph="..." />
+                <marker date="1503396643000" expanded="true" signature="1272:2122" ph="..." />
+                <marker date="1503396643000" expanded="true" signature="1281:1422" ph="&quot;&quot;&quot;execute TagExplorer instance...&quot;&quot;&quot;" />
+                <marker date="1503396643000" expanded="true" signature="1477:1682" ph="..." />
+                <marker date="1503396643000" expanded="true" signature="1714:1942" ph="..." />
+                <marker date="1503396643000" expanded="true" signature="1960:2122" ph="..." />
+                <marker date="1503396643000" expanded="true" signature="1973:2098" ph="..." />
+                <marker date="1503396643000" expanded="true" signature="2158:2192" ph="..." />
+                <marker date="1503396643000" expanded="true" signature="2213:2447" ph="..." />
+                <marker date="1503396643000" expanded="true" signature="2222:2345" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+                <marker date="1503396643000" expanded="true" signature="2461:2687" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -37,8 +50,8 @@
       <file leaf-file-name="TagExplorer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main/tagExplorer/TagExplorer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="712">
-              <caret line="234" column="9" lean-forward="true" selection-start-line="234" selection-start-column="9" selection-end-line="234" selection-end-column="9" />
+            <state relative-caret-position="304">
+              <caret line="217" column="41" lean-forward="true" selection-start-line="217" selection-start-column="41" selection-end-line="217" selection-end-column="41" />
               <folding>
                 <element signature="e#0#61#0" expanded="true" />
                 <element signature="e#312#396#1" expanded="false" />
@@ -421,10 +434,10 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Python tests.TestChainLog.py" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.TestTagExplorer.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python.PyServer" />
-      <item index="3" class="java.lang.String" itemvalue="Python.TestTagExplorer" />
-      <item index="4" class="java.lang.String" itemvalue="Python.TestChainLog" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.TestPyServer.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.TestPyServer.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python.PyServer" />
+      <item index="4" class="java.lang.String" itemvalue="Python.TestTagExplorer" />
+      <item index="5" class="java.lang.String" itemvalue="Python.TestChainLog" />
       <item index="6" class="java.lang.String" itemvalue="Python.TestPyServer" />
     </list>
     <recent_temporary>
@@ -453,9 +466,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestPyServer_py - 2017.08.22 at 17h 18m 01s.xml">
-      <configuration name="TestPyServer.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="TestPyServer_py - 2017.08.22 at 17h 18m 34s.xml">
       <configuration name="TestPyServer.py" configurationId="tests" />
     </history-entry>
@@ -477,6 +487,9 @@
     <history-entry file="TestPyServer_py - 2017.08.22 at 17h 26m 54s.xml">
       <configuration name="TestPyServer.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="TestPyServer_py - 2017.08.22 at 19h 10m 58s.xml">
+      <configuration name="TestPyServer.py" configurationId="tests" />
+    </history-entry>
     <history-entry file="TestTagExplorer_py - 2017.08.22 at 17h 02m 46s.xml">
       <configuration name="TestTagExplorer.py" configurationId="tests" />
     </history-entry>
@@ -488,37 +501,26 @@
     <frame x="1355" y="692" width="1922" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22382478" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.50213677" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32884398" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3828452" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39435145" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22341569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.50213677" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="91" y="91" width="1738" height="845" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32884398" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5396097" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22341569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5387029" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47314715" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="91" y="91" width="1738" height="845" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -679,7 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="541">
           <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -687,23 +688,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="541">
           <caret line="479" column="23" lean-forward="false" selection-start-line="479" selection-start-column="23" selection-end-line="479" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/log/log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test/log/log" />
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/nose/case.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="271" column="19" lean-forward="true" selection-start-line="271" selection-start-column="19" selection-end-line="271" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -711,7 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -719,7 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -727,9 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
           <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding>
-            <element signature="e#7#21#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -737,7 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -745,9 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -755,16 +738,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="856">
           <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/TestPyServer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="49" column="29" lean-forward="true" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+        <state relative-caret-position="792">
+          <caret line="49" column="29" lean-forward="false" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
           <folding>
             <element signature="e#217#415#0" expanded="false" />
             <element signature="e#443#464#0" expanded="false" />
@@ -774,16 +754,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main/pyServer/PyServer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="98" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="1992">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="99" selection-end-column="31" />
+          <folding>
+            <marker date="1503396643000" expanded="true" signature="498:2447" ph="..." />
+            <marker date="1503396643000" expanded="true" signature="963:1236" ph="..." />
+            <marker date="1503396643000" expanded="true" signature="1272:2122" ph="..." />
+            <marker date="1503396643000" expanded="true" signature="1281:1422" ph="&quot;&quot;&quot;execute TagExplorer instance...&quot;&quot;&quot;" />
+            <marker date="1503396643000" expanded="true" signature="1477:1682" ph="..." />
+            <marker date="1503396643000" expanded="true" signature="1714:1942" ph="..." />
+            <marker date="1503396643000" expanded="true" signature="1960:2122" ph="..." />
+            <marker date="1503396643000" expanded="true" signature="1973:2098" ph="..." />
+            <marker date="1503396643000" expanded="true" signature="2158:2192" ph="..." />
+            <marker date="1503396643000" expanded="true" signature="2213:2447" ph="..." />
+            <marker date="1503396643000" expanded="true" signature="2222:2345" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
+            <marker date="1503396643000" expanded="true" signature="2461:2687" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/tagExplorer/TagExplorer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
-          <caret line="234" column="9" lean-forward="true" selection-start-line="234" selection-start-column="9" selection-end-line="234" selection-end-column="9" />
+        <state relative-caret-position="304">
+          <caret line="217" column="41" lean-forward="true" selection-start-line="217" selection-start-column="41" selection-end-line="217" selection-end-column="41" />
           <folding>
             <element signature="e#0#61#0" expanded="true" />
             <element signature="e#312#396#1" expanded="false" />

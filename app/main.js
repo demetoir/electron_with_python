@@ -56,7 +56,7 @@ app.on('activate', function () {
 let pyServer = null
 const createPyServer = function () {
     let port = '' + '4242'
-    let script = path.join(__dirname, 'pyside', 'main', 'server', 'PyServer.py')
+    let script = path.join(__dirname, 'pyside', 'main', 'pyServer', 'PyServer.py')
     let cmd = 'python3'
     let args = [script, port]
 
@@ -65,7 +65,12 @@ const createPyServer = function () {
     if (pyServer !== null) {
         console.log('pyServer spawn success')
     }
+    pyServer.stderr.on('data', function (data) {
+        console.log('stderr: ' + data.toString())
+    })
 }
+
+
 const exitPyServer = function () {
     pyServer.kill()
     pyServer = null

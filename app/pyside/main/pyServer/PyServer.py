@@ -50,6 +50,7 @@ class PyServer:
         for attr in txp.__dict__:
             if type(getattr(txp, attr)) is FunctionType:
                 ret += [attr]
+        ret.sort()
         return ret
 
     def execute(self, cmd, *args):
