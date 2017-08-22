@@ -11,74 +11,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestPyServer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/TestPyServer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="49" column="29" lean-forward="false" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
-              <folding>
-                <element signature="e#217#415#0" expanded="false" />
-                <element signature="e#443#464#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PyServer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/pyServer/PyServer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1992">
-              <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="99" selection-end-column="31" />
-              <folding>
-                <marker date="1503396643000" expanded="true" signature="498:2447" ph="..." />
-                <marker date="1503396643000" expanded="true" signature="963:1236" ph="..." />
-                <marker date="1503396643000" expanded="true" signature="1272:2122" ph="..." />
-                <marker date="1503396643000" expanded="true" signature="1281:1422" ph="&quot;&quot;&quot;execute TagExplorer instance...&quot;&quot;&quot;" />
-                <marker date="1503396643000" expanded="true" signature="1477:1682" ph="..." />
-                <marker date="1503396643000" expanded="true" signature="1714:1942" ph="..." />
-                <marker date="1503396643000" expanded="true" signature="1960:2122" ph="..." />
-                <marker date="1503396643000" expanded="true" signature="1973:2098" ph="..." />
-                <marker date="1503396643000" expanded="true" signature="2158:2192" ph="..." />
-                <marker date="1503396643000" expanded="true" signature="2213:2447" ph="..." />
-                <marker date="1503396643000" expanded="true" signature="2222:2345" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-                <marker date="1503396643000" expanded="true" signature="2461:2687" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TagExplorer.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TagExplorer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/tagExplorer/TagExplorer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="217" column="41" lean-forward="true" selection-start-line="217" selection-start-column="41" selection-end-line="217" selection-end-column="41" />
+            <state relative-caret-position="651">
+              <caret line="253" column="0" lean-forward="true" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
               <folding>
-                <element signature="e#0#61#0" expanded="true" />
+                <element signature="e#161#224#1" expanded="false" />
                 <element signature="e#312#396#1" expanded="false" />
-                <element signature="e#793#820#0" expanded="false" />
-                <element signature="e#856#985#0" expanded="false" />
-                <element signature="e#856#941#1" expanded="false" />
-                <element signature="e#1030#1571#0" expanded="false" />
-                <element signature="e#1030#1152#1" expanded="false" />
-                <element signature="e#1161#1192#0" expanded="false" />
-                <element signature="e#1279#1312#0" expanded="false" />
-                <element signature="e#1485#1550#0" expanded="false" />
-                <element signature="e#1893#2144#0" expanded="false" />
-                <element signature="e#1893#1963#1" expanded="false" />
-                <element signature="e#2187#2263#1" expanded="false" />
-                <element signature="e#2333#2925#0" expanded="false" />
-                <element signature="e#2333#2404#1" expanded="false" />
-                <element signature="e#2490#2906#0" expanded="false" />
-                <element signature="e#2963#3094#0" expanded="false" />
-                <element signature="e#2963#3034#1" expanded="false" />
-                <element signature="e#3134#3428#0" expanded="false" />
-                <element signature="e#3134#3257#1" expanded="false" />
-                <element signature="e#3461#3651#0" expanded="false" />
-                <element signature="e#3461#3547#1" expanded="false" />
-                <element signature="e#3597#3651#0" expanded="false" />
-                <element signature="e#3688#4012#0" expanded="false" />
-                <element signature="e#4166#5138#0" expanded="false" />
+                <element signature="e#824#851#0" expanded="false" />
+                <element signature="e#887#1016#0" expanded="false" />
+                <element signature="e#887#972#1" expanded="false" />
+                <element signature="e#1061#1602#0" expanded="false" />
+                <element signature="e#1061#1183#1" expanded="false" />
+                <element signature="e#1192#1223#0" expanded="false" />
+                <element signature="e#1310#1343#0" expanded="false" />
+                <element signature="e#1516#1581#0" expanded="false" />
+                <element signature="e#1647#1885#0" expanded="false" />
+                <element signature="e#1647#1722#1" expanded="false" />
+                <element signature="e#1790#1866#0" expanded="false" />
+                <element signature="e#1924#2195#0" expanded="false" />
+                <element signature="e#1924#1994#1" expanded="false" />
+                <element signature="e#2238#2346#0" expanded="false" />
+                <element signature="e#2238#2314#1" expanded="false" />
+                <element signature="e#2382#2405#0" expanded="false" />
+                <element signature="e#2447#2473#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestTagExplorer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/TestTagExplorer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2781">
+              <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="banchCode.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main/banchCode.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="builtins.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1282051629/builtins.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1754">
+              <caret line="719" column="6" lean-forward="false" selection-start-line="719" selection-start-column="6" selection-end-line="719" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -122,7 +110,6 @@
         <option value="$PROJECT_DIR$/test/TestLogger.py" />
         <option value="$PROJECT_DIR$/main/server/PyServer.py" />
         <option value="$PROJECT_DIR$/main/tagExplorer/HardParser.py" />
-        <option value="$PROJECT_DIR$/main/banchCode.py" />
         <option value="$PROJECT_DIR$/main/Interface.py" />
         <option value="$PROJECT_DIR$/main/pyServer/log/log" />
         <option value="$PROJECT_DIR$/test/banch_code.py" />
@@ -133,17 +120,18 @@
         <option value="$PROJECT_DIR$/main/logger/logger.py" />
         <option value="$PROJECT_DIR$/main/BaseTest.py" />
         <option value="$PROJECT_DIR$/main/pyServer/PyServer.py" />
-        <option value="$PROJECT_DIR$/test/TestTagExplorer.py" />
         <option value="$PROJECT_DIR$/test/TestPyServer.py" />
         <option value="$PROJECT_DIR$/main/tagExplorer/TagExplorer.py" />
+        <option value="$PROJECT_DIR$/test/TestTagExplorer.py" />
+        <option value="$PROJECT_DIR$/main/banchCode.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1355" />
-    <option name="y" value="692" />
-    <option name="width" value="1078" />
-    <option name="height" value="1032" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1046" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -164,7 +152,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,6 +191,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -227,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.TestPyServer.py">
+  <component name="RunManager" selected="Python.banchCode">
     <configuration name="PyServer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -431,7 +419,24 @@
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <list size="7">
+    <configuration name="banchCode" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pyside" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/banchCode.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Python tests.TestChainLog.py" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.TestTagExplorer.py" />
       <item index="2" class="java.lang.String" itemvalue="Python tests.TestPyServer.py" />
@@ -439,13 +444,15 @@
       <item index="4" class="java.lang.String" itemvalue="Python.TestTagExplorer" />
       <item index="5" class="java.lang.String" itemvalue="Python.TestChainLog" />
       <item index="6" class="java.lang.String" itemvalue="Python.TestPyServer" />
+      <item index="7" class="java.lang.String" itemvalue="Python.banchCode" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.TestPyServer" />
-        <item index="1" class="java.lang.String" itemvalue="Python.TestTagExplorer" />
-        <item index="2" class="java.lang.String" itemvalue="Python.TestChainLog" />
-        <item index="3" class="java.lang.String" itemvalue="Python.PyServer" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.banchCode" />
+        <item index="1" class="java.lang.String" itemvalue="Python.TestPyServer" />
+        <item index="2" class="java.lang.String" itemvalue="Python.TestTagExplorer" />
+        <item index="3" class="java.lang.String" itemvalue="Python.TestChainLog" />
+        <item index="4" class="java.lang.String" itemvalue="Python.PyServer" />
       </list>
     </recent_temporary>
   </component>
@@ -466,51 +473,50 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestPyServer_py - 2017.08.22 at 17h 18m 34s.xml">
-      <configuration name="TestPyServer.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="TestPyServer_py - 2017.08.22 at 17h 19m 18s.xml">
-      <configuration name="TestPyServer.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="TestPyServer_py - 2017.08.22 at 17h 19m 47s.xml">
-      <configuration name="TestPyServer.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="TestPyServer_py - 2017.08.22 at 17h 20m 16s.xml">
-      <configuration name="TestPyServer.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="TestPyServer_py - 2017.08.22 at 17h 22m 36s.xml">
-      <configuration name="TestPyServer.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="TestPyServer_py - 2017.08.22 at 17h 26m 15s.xml">
-      <configuration name="TestPyServer.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="TestPyServer_py - 2017.08.22 at 17h 26m 54s.xml">
-      <configuration name="TestPyServer.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="TestPyServer_py - 2017.08.22 at 19h 10m 58s.xml">
-      <configuration name="TestPyServer.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="TestTagExplorer_py - 2017.08.22 at 17h 02m 46s.xml">
+    <history-entry file="TestTagExplorer_py - 2017.08.22 at 20h 28m 13s.xml">
       <configuration name="TestTagExplorer.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="TestTagExplorer_py - 2017.08.22 at 17h 11m 11s.xml">
+    <history-entry file="TestTagExplorer_py - 2017.08.22 at 20h 28m 49s.xml">
+      <configuration name="TestTagExplorer.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="TestTagExplorer_py - 2017.08.22 at 20h 29m 15s.xml">
+      <configuration name="TestTagExplorer.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="TestTagExplorer_py - 2017.08.22 at 20h 29m 48s.xml">
+      <configuration name="TestTagExplorer.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="TestTagExplorer_py - 2017.08.22 at 20h 30m 07s.xml">
+      <configuration name="TestTagExplorer.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="TestTagExplorer_py - 2017.08.22 at 20h 31m 23s.xml">
+      <configuration name="TestTagExplorer.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="TestTagExplorer_py - 2017.08.22 at 20h 31m 55s.xml">
+      <configuration name="TestTagExplorer.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="TestTagExplorer_py - 2017.08.22 at 20h 33m 04s.xml">
+      <configuration name="TestTagExplorer.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="TestTagExplorer_py - 2017.08.22 at 20h 34m 23s.xml">
+      <configuration name="TestTagExplorer.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="TestTagExplorer_py - 2017.08.22 at 20h 40m 11s.xml">
       <configuration name="TestTagExplorer.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1355" y="692" width="1922" height="1092" extended-state="6" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1046" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22341569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22341569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.50213677" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5383734" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32884398" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5387029" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32760596" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47314715" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -634,13 +640,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/zerorpc/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/main/banchCode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/Interface.py" />
     <entry file="file://$PROJECT_DIR$/main/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -676,43 +675,12 @@
     <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/nose/util.py" />
     <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/nose/failure.py" />
     <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/nose/case.py" />
-    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1282051629/builtins.py" />
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/nose/tools/nontrivial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/nose/util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="479" column="23" lean-forward="false" selection-start-line="479" selection-start-column="23" selection-end-line="479" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/nose/tools/nontrivial.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/nose/util.py" />
     <entry file="file://$PROJECT_DIR$/test/log/log" />
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/nose/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="271" column="19" lean-forward="true" selection-start-line="271" selection-start-column="19" selection-end-line="271" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/Test_banch_code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/TestChainLog.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/nose/case.py" />
+    <entry file="file://$PROJECT_DIR$/test/Test_banch_code.py" />
+    <entry file="file://$PROJECT_DIR$/test/TestChainLog.py" />
     <entry file="file://$PROJECT_DIR$/main/logger/logger.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -720,90 +688,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/Chain.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/BaseTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/TestTagExplorer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="856">
-          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/main/Chain.py" />
+    <entry file="file://$PROJECT_DIR$/main/BaseTest.py" />
     <entry file="file://$PROJECT_DIR$/test/TestPyServer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="49" column="29" lean-forward="false" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
-          <folding>
-            <element signature="e#217#415#0" expanded="false" />
-            <element signature="e#443#464#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="1188">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/pyServer/PyServer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1992">
-          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="99" selection-end-column="31" />
+        <state relative-caret-position="2403">
+          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding>
-            <marker date="1503396643000" expanded="true" signature="498:2447" ph="..." />
-            <marker date="1503396643000" expanded="true" signature="963:1236" ph="..." />
-            <marker date="1503396643000" expanded="true" signature="1272:2122" ph="..." />
-            <marker date="1503396643000" expanded="true" signature="1281:1422" ph="&quot;&quot;&quot;execute TagExplorer instance...&quot;&quot;&quot;" />
-            <marker date="1503396643000" expanded="true" signature="1477:1682" ph="..." />
-            <marker date="1503396643000" expanded="true" signature="1714:1942" ph="..." />
-            <marker date="1503396643000" expanded="true" signature="1960:2122" ph="..." />
-            <marker date="1503396643000" expanded="true" signature="1973:2098" ph="..." />
-            <marker date="1503396643000" expanded="true" signature="2158:2192" ph="..." />
-            <marker date="1503396643000" expanded="true" signature="2213:2447" ph="..." />
-            <marker date="1503396643000" expanded="true" signature="2222:2345" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-            <marker date="1503396643000" expanded="true" signature="2461:2687" ph="..." />
+            <marker date="1503388903545" expanded="true" signature="2657:2687" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1282051629/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1754">
+          <caret line="719" column="6" lean-forward="false" selection-start-line="719" selection-start-column="6" selection-end-line="719" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/TestTagExplorer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2781">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/tagExplorer/TagExplorer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="217" column="41" lean-forward="true" selection-start-line="217" selection-start-column="41" selection-end-line="217" selection-end-column="41" />
+        <state relative-caret-position="651">
+          <caret line="253" column="0" lean-forward="true" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
           <folding>
-            <element signature="e#0#61#0" expanded="true" />
+            <element signature="e#161#224#1" expanded="false" />
             <element signature="e#312#396#1" expanded="false" />
-            <element signature="e#793#820#0" expanded="false" />
-            <element signature="e#856#985#0" expanded="false" />
-            <element signature="e#856#941#1" expanded="false" />
-            <element signature="e#1030#1571#0" expanded="false" />
-            <element signature="e#1030#1152#1" expanded="false" />
-            <element signature="e#1161#1192#0" expanded="false" />
-            <element signature="e#1279#1312#0" expanded="false" />
-            <element signature="e#1485#1550#0" expanded="false" />
-            <element signature="e#1893#2144#0" expanded="false" />
-            <element signature="e#1893#1963#1" expanded="false" />
-            <element signature="e#2187#2263#1" expanded="false" />
-            <element signature="e#2333#2925#0" expanded="false" />
-            <element signature="e#2333#2404#1" expanded="false" />
-            <element signature="e#2490#2906#0" expanded="false" />
-            <element signature="e#2963#3094#0" expanded="false" />
-            <element signature="e#2963#3034#1" expanded="false" />
-            <element signature="e#3134#3428#0" expanded="false" />
-            <element signature="e#3134#3257#1" expanded="false" />
-            <element signature="e#3461#3651#0" expanded="false" />
-            <element signature="e#3461#3547#1" expanded="false" />
-            <element signature="e#3597#3651#0" expanded="false" />
-            <element signature="e#3688#4012#0" expanded="false" />
-            <element signature="e#4166#5138#0" expanded="false" />
+            <element signature="e#824#851#0" expanded="false" />
+            <element signature="e#887#1016#0" expanded="false" />
+            <element signature="e#887#972#1" expanded="false" />
+            <element signature="e#1061#1602#0" expanded="false" />
+            <element signature="e#1061#1183#1" expanded="false" />
+            <element signature="e#1192#1223#0" expanded="false" />
+            <element signature="e#1310#1343#0" expanded="false" />
+            <element signature="e#1516#1581#0" expanded="false" />
+            <element signature="e#1647#1885#0" expanded="false" />
+            <element signature="e#1647#1722#1" expanded="false" />
+            <element signature="e#1790#1866#0" expanded="false" />
+            <element signature="e#1924#2195#0" expanded="false" />
+            <element signature="e#1924#1994#1" expanded="false" />
+            <element signature="e#2238#2346#0" expanded="false" />
+            <element signature="e#2238#2314#1" expanded="false" />
+            <element signature="e#2382#2405#0" expanded="false" />
+            <element signature="e#2447#2473#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/banchCode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -29,6 +29,7 @@ class TagExplorer(object):
         self.tag_name = None
         self.attr_key = None
         self.filter_list = filter_list
+        self.parse_form = None
         if url is not None:
             self.set_root(url)
 
@@ -90,6 +91,7 @@ class TagExplorer(object):
         self.__root__ = bs(html, self.HTML_PARSER)
         self.stack_soup = [self.__root__]
         self.stack_idx = [None]
+        return True
 
     def set_filter(self, *args):
         """
@@ -99,6 +101,17 @@ class TagExplorer(object):
         :return None
         """
         self.filter_list = args
+
+    def get_filter(self):
+        return self.filter_list
+
+    def add_filter(self, name):
+        self.filter_list += [name]
+
+    def del_filter(self, name):
+        idx = self.filter_list.index(name)
+        self.filter_list.pop(idx)
+        return True
 
     def children_tag(self):
         """return current children's tag list
@@ -138,21 +151,20 @@ class TagExplorer(object):
         :param
         idx : int
 
-        :return None
         """
         # self.log.error('at move_down ' + str(idx) + ' ' + str(type(idx)))
         self.stack_soup += [self.stack_soup[-1].contents[idx]]
         self.stack_idx += [idx]
+        return True
 
     def move_up(self):
         """
         move up form current node to parent node
-
-        :return None
         """
         if len(self.stack_soup) > 1:
             self.stack_soup.pop()
             self.stack_idx.pop()
+        return True
 
     def trace_stack(self):
         """
@@ -238,3 +250,4 @@ class TagExplorer(object):
 
     def import_parse_form(self, parse_form):
         self.parse_form = json.loads(parse_form)
+        return True

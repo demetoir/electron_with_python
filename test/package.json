@@ -1,0 +1,33 @@
+{
+  "name": "pretty-calculator",
+  "version": "1.0.0",
+  "description": "A minimal Electron and Python - based calculator ",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/fyears/electron-python-example",
+  "keywords": [
+    "Electron",
+    "Python",
+    "zerorpc",
+    "demo"
+  ],
+  "author": "fyears",
+  "license": "MIT",
+  "dependencies": {
+    "zerorpc": "fyears/zerorpc-node",
+    "electron-localshortcut": "^2.0.2"
+  },
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "electron-packager": "^8.5.1",
+    "eslint": "^4.3.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}

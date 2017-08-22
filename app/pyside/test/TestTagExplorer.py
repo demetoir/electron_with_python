@@ -147,3 +147,45 @@ class TestTagExplorer(BaseTest):
         ret = self.txp.extract_from_parse_form(TEST_URL)
         self.log(ret)
         pass
+
+    def test_13_get_filter(self):
+        self.chaining(self.test_01_set_root())
+
+        filter_list = ('comment',)
+        self.txp.set_filter(*filter_list)
+
+        after = self.txp.get_filter()
+        self.log(after)
+        self.log(filter_list)
+        assert filter_list == after
+
+    def test_14_add_filter(self):
+        self.chaining(self.test_01_set_root())
+
+        before = self.txp.get_filter()
+        assert before == []
+
+        ret = self.txp.add_filter('comment')
+
+        after = self.txp.get_filter()
+        assert after == ['comment']
+        self.log(ret)
+        self.log(after)
+
+    def test_15_del_filter(self):
+        self.chaining(self.test_01_set_root())
+        self.txp.add_filter('comment')
+        self.txp.add_filter('div')
+
+        before = self.txp.get_filter()
+        self.log(before)
+
+        ret = self.txp.del_filter('comment')
+        self.log(ret)
+
+        after = self.txp.get_filter()
+        self.log(after)
+
+        locals_ = locals()
+        for i in locals_:
+            print(i, locals_[i])
