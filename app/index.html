@@ -5,7 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Hello Calculator!</title>
+
     <style>
+        .body_block {
+            background-color: darkgrey
+        }
+        
         .tag_block {
             background-color: coral;
             display: inline-flex;
@@ -36,14 +41,13 @@
     </style>
 </head>
 
-<body>
-    <div>
-        <p>html address</p>
-        <input id="url" value="http://bbs.ruliweb.com/best/humor" />
-        <button id="btn_set_url">set url</button>
-    </div>
-    <br>
+<body class="body_block">
     <div class="tag_block">
+        <div>
+            <p>html address</p>
+            <input id="url" value="http://bbs.ruliweb.com/best/humor" />
+            <button id="btn_set_url">set url</button>
+        </div>
         <div class='tag_list_block' id="tag_list">
             <p>tag list</p>
         </div>
@@ -56,7 +60,9 @@
     </div>
     <div class="html_output_block">
         <p>html output</p>
-        <div id="html_output"></div>
+        <div id="html_output">
+        <br>
+        </div>
     </div>
 </body>
 <script>
