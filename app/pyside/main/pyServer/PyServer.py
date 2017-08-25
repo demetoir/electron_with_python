@@ -82,6 +82,8 @@ class PyServer:
             # for item in ret:
             #     not_yield_ret += [item]
 
+            # todo normalize ret
+
             return ret
 
     def execute_many(self, *args):
@@ -98,6 +100,18 @@ class PyServer:
         url = self.txp.url
         filter_list = self.txp.filter_list
         return url, filter_list
+
+    def echo_dict(self):
+        d = {}
+        d['key1'] = 'value1'
+        d['key2'] = 'value2'
+        d['key3'] = 'value3'
+
+        # ret = []
+        # for k in d:
+        #     ret += [(k, d[k])]
+        ret = d
+        return [ret, ret]
 
 
 def main():

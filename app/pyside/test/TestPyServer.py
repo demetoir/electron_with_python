@@ -46,7 +46,6 @@ class TestPyServer(BaseTest):
         self.log(ret)
 
 
-    def test02_execute(self):
-        args = ('execute', '')
-
-        pass
+    def test02_echo_dict(self):
+        ret = connect_zerorpc('echo_dict')
+        self.log(ret)

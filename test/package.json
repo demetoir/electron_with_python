@@ -16,11 +16,11 @@
   "author": "fyears",
   "license": "MIT",
   "dependencies": {
-    "zerorpc": "fyears/zerorpc-node",
-    "electron-localshortcut": "^2.0.2"
+    "electron-localshortcut": "^2.0.2",
+    "zerorpc": "github:fyears/zerorpc-node"
   },
   "devDependencies": {
-    "electron": "^1.4.1",
+    "electron": "^1.7.6",
     "electron-packager": "^8.5.1",
     "eslint": "^4.3.0",
     "eslint-config-standard": "^10.2.1",

@@ -186,6 +186,3 @@ class TestTagExplorer(BaseTest):
         after = self.txp.get_filter()
         self.log(after)
 
-        locals_ = locals()
-        for i in locals_:
-            print(i, locals_[i])

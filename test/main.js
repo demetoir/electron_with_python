@@ -7,7 +7,8 @@ let pyServer = null
 const createPyserver = function () {
     let port = '' + '4242'
     let script = path.join(__dirname, 'pyside', 'main', 'pyServer', 'PyServer.py')
-    script = 'C:\\Users\\demetoir_desktop\\WebstormProjects\\electron_with_python\\app\\pyside\\main\\pyServer\\PyServer.py'
+    // script = 'C:\\Users\\demetoir_desktop\\WebstormProjects\\electron_with_python\\app\\pyside\\main\\pyServer\\PyServer.py'
+    script = '/home/demetoir/WebstormProjects/electron_with_python/app/pyside/main/pyServer/PyServer.py'
     let cmd = 'python3'
     let args = [script, port]
 
@@ -21,7 +22,6 @@ const createPyserver = function () {
     })
 
 }
-
 
 function exitPyServer () {
     pyServer.kill()
@@ -83,11 +83,50 @@ const test = function () {
 
     })
 
+    client.invoke('execute', 'move_down', 7, function (err, res) {
+    })
+
+    client.invoke('execute', 'move_down', 5, function (err, res) {
+    })
+
+    client.invoke('execute', 'add_filter', 'NavigableString', function (err, res) {
+    })
+
+    client.invoke('execute', 'children_tag', function (error, res) {
+        for (let key in res) {
+            let idx = res[key][0]
+            let tag_name = res[key][1]
+            let tag_attrs = res[key][2]
+
+            let attrs = null
+            if (tag_attrs) {
+                attrs = ''
+                for (let k in tag_attrs) {
+                    console.log(k, ' : ', tag_attrs[k])
+                    attrs += k + ' : ' + tag_attrs[k] + '\n'
+                }
+                console.log(tag_attrs)
+            }
+
+            let item = idx + ' , ' + tag_name + ' , ' + attrs
+            console.log(item)
+        }
+    })
+
+    client.invoke('echo_dict', function (error, res) {
+        console.log(res)
+        for (let key in res) {
+            console.log(key, res[key])
+
+        }
+    })
+
 }
 
 createPyserver()
 test()
-exitPyServer()
+// exitPyServer()
+
 
 
 

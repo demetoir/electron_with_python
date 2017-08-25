@@ -11,31 +11,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TagExplorer.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestPyServer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/TestPyServer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+              <folding>
+                <element signature="e#217#415#0" expanded="false" />
+                <element signature="e#443#464#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PyServer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/pyServer/PyServer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="640">
+              <caret line="124" column="29" lean-forward="true" selection-start-line="124" selection-start-column="29" selection-end-line="124" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logger.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/logger/logger.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="592">
+              <caret line="79" column="38" lean-forward="true" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TagExplorer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main/tagExplorer/TagExplorer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="253" column="0" lean-forward="true" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
+            <state relative-caret-position="933">
+              <caret line="148" column="46" lean-forward="true" selection-start-line="148" selection-start-column="46" selection-end-line="148" selection-end-column="46" />
               <folding>
-                <element signature="e#161#224#1" expanded="false" />
+                <element signature="e#0#61#0" expanded="true" />
                 <element signature="e#312#396#1" expanded="false" />
-                <element signature="e#824#851#0" expanded="false" />
-                <element signature="e#887#1016#0" expanded="false" />
-                <element signature="e#887#972#1" expanded="false" />
-                <element signature="e#1061#1602#0" expanded="false" />
-                <element signature="e#1061#1183#1" expanded="false" />
-                <element signature="e#1192#1223#0" expanded="false" />
-                <element signature="e#1310#1343#0" expanded="false" />
-                <element signature="e#1516#1581#0" expanded="false" />
-                <element signature="e#1647#1885#0" expanded="false" />
-                <element signature="e#1647#1722#1" expanded="false" />
-                <element signature="e#1790#1866#0" expanded="false" />
-                <element signature="e#1924#2195#0" expanded="false" />
-                <element signature="e#1924#1994#1" expanded="false" />
-                <element signature="e#2238#2346#0" expanded="false" />
-                <element signature="e#2238#2314#1" expanded="false" />
-                <element signature="e#2382#2405#0" expanded="false" />
-                <element signature="e#2447#2473#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -44,28 +60,8 @@
       <file leaf-file-name="TestTagExplorer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/TestTagExplorer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2781">
-              <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="banchCode.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main/banchCode.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="builtins.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1282051629/builtins.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1754">
-              <caret line="719" column="6" lean-forward="false" selection-start-line="719" selection-start-column="6" selection-end-line="719" selection-end-column="6" />
+            <state relative-caret-position="832">
+              <caret line="188" column="0" lean-forward="true" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -117,21 +113,21 @@
         <option value="$PROJECT_DIR$/main/Chain.py" />
         <option value="$PROJECT_DIR$/test/TestChainLog.py" />
         <option value="$PROJECT_DIR$/test/Test_banch_code.py" />
-        <option value="$PROJECT_DIR$/main/logger/logger.py" />
         <option value="$PROJECT_DIR$/main/BaseTest.py" />
-        <option value="$PROJECT_DIR$/main/pyServer/PyServer.py" />
-        <option value="$PROJECT_DIR$/test/TestPyServer.py" />
-        <option value="$PROJECT_DIR$/main/tagExplorer/TagExplorer.py" />
-        <option value="$PROJECT_DIR$/test/TestTagExplorer.py" />
         <option value="$PROJECT_DIR$/main/banchCode.py" />
+        <option value="$PROJECT_DIR$/test/TestTagExplorer.py" />
+        <option value="$PROJECT_DIR$/test/TestPyServer.py" />
+        <option value="$PROJECT_DIR$/main/logger/logger.py" />
+        <option value="$PROJECT_DIR$/main/pyServer/PyServer.py" />
+        <option value="$PROJECT_DIR$/main/tagExplorer/TagExplorer.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1046" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="1350" />
+    <option name="y" value="889" />
+    <option name="width" value="1076" />
+    <option name="height" value="996" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -151,7 +147,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,11 +186,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test/TestChainLog.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test/TestPyServer.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -215,7 +211,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.banchCode">
+  <component name="RunManager" selected="Python tests.TestPyServer.py">
     <configuration name="PyServer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -286,9 +282,9 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pyside" />
@@ -448,9 +444,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.banchCode" />
-        <item index="1" class="java.lang.String" itemvalue="Python.TestPyServer" />
-        <item index="2" class="java.lang.String" itemvalue="Python.TestTagExplorer" />
+        <item index="0" class="java.lang.String" itemvalue="Python.TestTagExplorer" />
+        <item index="1" class="java.lang.String" itemvalue="Python.banchCode" />
+        <item index="2" class="java.lang.String" itemvalue="Python.TestPyServer" />
         <item index="3" class="java.lang.String" itemvalue="Python.TestChainLog" />
         <item index="4" class="java.lang.String" itemvalue="Python.PyServer" />
       </list>
@@ -473,60 +469,72 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestTagExplorer_py - 2017.08.22 at 20h 28m 13s.xml">
-      <configuration name="TestTagExplorer.py" configurationId="tests" />
+    <history-entry file="TestPyServer_py - 2017.08.24 at 05h 57m 28s.xml">
+      <configuration name="TestPyServer.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="TestTagExplorer_py - 2017.08.22 at 20h 28m 49s.xml">
-      <configuration name="TestTagExplorer.py" configurationId="tests" />
+    <history-entry file="TestPyServer_py - 2017.08.24 at 05h 57m 58s.xml">
+      <configuration name="TestPyServer.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="TestTagExplorer_py - 2017.08.22 at 20h 29m 15s.xml">
-      <configuration name="TestTagExplorer.py" configurationId="tests" />
+    <history-entry file="TestPyServer_py - 2017.08.24 at 05h 59m 15s.xml">
+      <configuration name="TestPyServer.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="TestTagExplorer_py - 2017.08.22 at 20h 29m 48s.xml">
-      <configuration name="TestTagExplorer.py" configurationId="tests" />
+    <history-entry file="TestPyServer_py - 2017.08.24 at 06h 00m 28s.xml">
+      <configuration name="TestPyServer.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="TestTagExplorer_py - 2017.08.22 at 20h 30m 07s.xml">
-      <configuration name="TestTagExplorer.py" configurationId="tests" />
+    <history-entry file="TestPyServer_py - 2017.08.24 at 06h 02m 02s.xml">
+      <configuration name="TestPyServer.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="TestTagExplorer_py - 2017.08.22 at 20h 31m 23s.xml">
-      <configuration name="TestTagExplorer.py" configurationId="tests" />
+    <history-entry file="TestPyServer_py - 2017.08.24 at 06h 02m 33s.xml">
+      <configuration name="TestPyServer.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="TestTagExplorer_py - 2017.08.22 at 20h 31m 55s.xml">
-      <configuration name="TestTagExplorer.py" configurationId="tests" />
+    <history-entry file="TestPyServer_py - 2017.08.24 at 18h 14m 43s.xml">
+      <configuration name="TestPyServer.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="TestTagExplorer_py - 2017.08.22 at 20h 33m 04s.xml">
-      <configuration name="TestTagExplorer.py" configurationId="tests" />
+    <history-entry file="TestPyServer_py - 2017.08.24 at 18h 15m 07s.xml">
+      <configuration name="TestPyServer.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="TestTagExplorer_py - 2017.08.22 at 20h 34m 23s.xml">
-      <configuration name="TestTagExplorer.py" configurationId="tests" />
+    <history-entry file="TestPyServer_py - 2017.08.24 at 18h 18m 28s.xml">
+      <configuration name="TestPyServer.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="TestTagExplorer_py - 2017.08.22 at 20h 40m 11s.xml">
-      <configuration name="TestTagExplorer.py" configurationId="tests" />
+    <history-entry file="TestPyServer_py - 2017.08.24 at 18h 26m 15s.xml">
+      <configuration name="TestPyServer.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1046" extended-state="6" />
+    <frame x="1350" y="889" width="1076" height="996" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22341569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40503877" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.50213677" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5383734" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32884398" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32760596" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5387029" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47314715" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6451613" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47314715" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="91" y="91" width="1738" height="845" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.50213677" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5383734" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32884398" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32760596" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22341569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47314715" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -668,7 +676,6 @@
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/bs4/__init__.py" />
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/bs4/element.py" />
     <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-491856452/builtins.py" />
-    <entry file="file://$PROJECT_DIR$/main/pyServer/log/log" />
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/zerorpc/decorators.py" />
     <entry file="file://C:/Program Files/Anaconda3/Lib/site-packages/nose/tools/nontrivial.py" />
     <entry file="file://C:/Program Files/Anaconda3/Lib/unittest/case.py" />
@@ -681,82 +688,67 @@
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/nose/case.py" />
     <entry file="file://$PROJECT_DIR$/test/Test_banch_code.py" />
     <entry file="file://$PROJECT_DIR$/test/TestChainLog.py" />
-    <entry file="file://$PROJECT_DIR$/main/logger/logger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/Chain.py" />
     <entry file="file://$PROJECT_DIR$/main/BaseTest.py" />
-    <entry file="file://$PROJECT_DIR$/test/TestPyServer.py">
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1282051629/builtins.py" />
+    <entry file="file://$PROJECT_DIR$/main/banchCode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/pyServer/PyServer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2403">
-          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding>
-            <marker date="1503388903545" expanded="true" signature="2657:2687" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2017.2/system/python_stubs/-1282051629/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1754">
-          <caret line="719" column="6" lean-forward="false" selection-start-line="719" selection-start-column="6" selection-end-line="719" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="57">
+          <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/TestTagExplorer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2781">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state relative-caret-position="832">
+          <caret line="188" column="0" lean-forward="true" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/logger/logger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="79" column="38" lean-forward="true" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/TestPyServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="29" column="16" lean-forward="true" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding>
+            <element signature="e#217#415#0" expanded="false" />
+            <element signature="e#443#464#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/pyServer/PyServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="124" column="29" lean-forward="true" selection-start-line="124" selection-start-column="29" selection-end-line="124" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/pyServer/log/log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="881">
+          <caret line="221" column="57" lean-forward="false" selection-start-line="221" selection-start-column="57" selection-end-line="221" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/tagExplorer/TagExplorer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="253" column="0" lean-forward="true" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
+        <state relative-caret-position="933">
+          <caret line="148" column="46" lean-forward="true" selection-start-line="148" selection-start-column="46" selection-end-line="148" selection-end-column="46" />
           <folding>
-            <element signature="e#161#224#1" expanded="false" />
+            <element signature="e#0#61#0" expanded="true" />
             <element signature="e#312#396#1" expanded="false" />
-            <element signature="e#824#851#0" expanded="false" />
-            <element signature="e#887#1016#0" expanded="false" />
-            <element signature="e#887#972#1" expanded="false" />
-            <element signature="e#1061#1602#0" expanded="false" />
-            <element signature="e#1061#1183#1" expanded="false" />
-            <element signature="e#1192#1223#0" expanded="false" />
-            <element signature="e#1310#1343#0" expanded="false" />
-            <element signature="e#1516#1581#0" expanded="false" />
-            <element signature="e#1647#1885#0" expanded="false" />
-            <element signature="e#1647#1722#1" expanded="false" />
-            <element signature="e#1790#1866#0" expanded="false" />
-            <element signature="e#1924#2195#0" expanded="false" />
-            <element signature="e#1924#1994#1" expanded="false" />
-            <element signature="e#2238#2346#0" expanded="false" />
-            <element signature="e#2238#2314#1" expanded="false" />
-            <element signature="e#2382#2405#0" expanded="false" />
-            <element signature="e#2447#2473#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/banchCode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>

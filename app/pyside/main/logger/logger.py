@@ -70,6 +70,9 @@ class Logger(metaclass=Singleton):
 
                 if type(var) is str:
                     msg += str(var) + ENDL
+                elif type(var) is dict:
+                    l = [str(k) + ' : ' + str(var[k]) for k in var]
+                    msg += '{' + ',\n'.join(l) + '}'
                 else:
                     msg += '[' + ',\n'.join(map(str, var)) + ']' + ENDL
 
