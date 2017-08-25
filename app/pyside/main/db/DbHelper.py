@@ -2,7 +2,7 @@ import os
 import sqlite3
 
 from main.db.DbContract import *
-from main.logger import Logger
+from main.logger.logger import Logger
 
 
 def get_post_number(s):

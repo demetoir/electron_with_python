@@ -1,7 +1,7 @@
 from main.DbContract import *
 from nose import with_setup
 
-from main import util
+from main.util import util
 from main.db.DbHelper import DbHelper
 from main.tagExplorer.HardParser import HardParser
 from main.db.DbContract import WebSiteContract

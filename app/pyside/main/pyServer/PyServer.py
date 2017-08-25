@@ -40,7 +40,8 @@ class PyServer:
         self.log.info(text)
         return text
 
-    def help(self):
+    @staticmethod
+    def help():
         """
         echo TagExplorer instance's function list
 
@@ -97,15 +98,13 @@ class PyServer:
 
         :return: list
         """
-        url = self.txp.url
+        url = self.txp.__root__
         filter_list = self.txp.filter_list
         return url, filter_list
 
-    def echo_dict(self):
-        d = {}
-        d['key1'] = 'value1'
-        d['key2'] = 'value2'
-        d['key3'] = 'value3'
+    @staticmethod
+    def echo_dict():
+        d = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3'}
 
         # ret = []
         # for k in d:

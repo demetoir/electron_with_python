@@ -1,8 +1,6 @@
 import zerorpc
-from nose import with_setup
 
 from main.BaseTest import BaseTest
-from main.util.util import *
 
 URL_SITE = """http://bbs.ruliweb.com/best/humor?&page=1"""
 # add PyServer directory to system path
@@ -44,7 +42,6 @@ class TestPyServer(BaseTest):
         ret = connect_zerorpc('help')
 
         self.log(ret)
-
 
     def test02_echo_dict(self):
         ret = connect_zerorpc('echo_dict')
