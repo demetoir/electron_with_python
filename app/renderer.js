@@ -1,11 +1,11 @@
 const zerorpc = require('zerorpc')
 let client = new zerorpc.Client()
-const electron = require('electron')
-const ipcRenderer = electron.ipcRenderer
-const remote = electron.remote
+// const electron = require('electron')
+// const ipcRenderer = electron.ipcRenderer
+// const remote = electron.remote
 const util = require('util')
 const EventEmitter = require('events')
-const main = remote.require('./main.js')
+// const main = remote.require('./main.js')
 
 // connect pyServer
 function connect_pyServer () {
@@ -26,117 +26,172 @@ function connect_pyServer () {
 
 connect_pyServer()
 
-function Renderer () {
-    this.url = document.querySelector('#url')
-    this.html_output = document.querySelector('#html_output')
-    this.tag_list = document.querySelector('#tag_list')
-    this.btn_go = document.querySelector('#go')
-    this.btn_back = document.querySelector('#back')
-    this.tag_number = document.querySelector('#tag_number')
-    this.trace_stack = document.querySelector('#stack_trace')
-    this.btn_set_url = document.querySelector('#btn_set_url')
-    this.filter_list = document.querySelector('#filter_list')
-    this.filter_input = document.querySelector('#filter_input')
-    this.btn_filter_add = document.querySelector('#btn_filter_add')
-    this.btn_filter_del = document.querySelector('#btn_filter_del')
+function deco (str, tag) {
+    return '<' + tag + '>' + str + '</' + tag + '>'
+}
 
-    this.temp = null
-
-    this.btn_set_url.addEventListener('click', function () {
-        let strUrl = url.value
-        console.log(strUrl)
-        client.invoke('execute', 'set_root', strUrl, function (error, res) {
-            renderer.emit('update_page')
-        })
-    })
-
-    this.btn_back.addEventListener('click', function () {
-        client.invoke('execute', 'move_up', function (err, res) {
-            renderer.emit('update_page')
-        })
-        // ipcRenderer.send('back', 0)
-    })
-
-    this.btn_go.addEventListener('click', function () {
-        let idx = Number(renderer.tag_number.value)
-        client.invoke('execute', 'move_down', idx, function (err, res) {
-            renderer.emit('update_page')
-        })
-
-        // ipcRenderer.send('go', tag_number.value)
-    })
-
-    this.btn_filter_add.addEventListener('click', function () {
-        let tag_name = renderer.filter_input.value
-        client.invoke('execute', 'add_filter', tag_name, function () {
-            renderer.emit('update_page')
-        })
-    })
-
-    this.btn_filter_del.addEventListener('click', function () {
-        let tag_name = renderer.filter_input.value
-        client.invoke('execute', 'del_filter', tag_name, function () {
-            renderer.emit('update_page')
-        })
-    })
-
-    this.updatePage = function () {
-        //todo need hack
-
-        client.invoke('execute', 'current_html', function (error, res) {
-            renderer.html_output.innerHTML = res
-        })
-
-        client.invoke('execute', 'children_tag', function (error, res) {
-            renderer.tag_list.innerHTML = ''
-            for (let i = 0; i < res.length; i++) {
-                let idx = res[i][0]
-                let tag_name = res[i][1]
-                let tag_attrs = res[i][2]
-
-                let attrs = null
-                if (tag_attrs) {
-                    console.log(tag_attrs)
-                    attrs = '{'
-                    for (let key in tag_attrs) {
-                        let attr = tag_attrs[idx]
-                        console.log(attr)
-                        attrs += key + ' : ' + tag_attrs[key] + ' , '
-                    }
-                    attrs += '}'
-                }
-
-                let item = idx + ' , ' + tag_name + ' , ' + attrs + '<br/>'
-                renderer.tag_list.innerHTML += item
-            }
-        })
-
-        client.invoke('execute', 'trace_stack', function (error, res) {
-            // console.log(res)
-            renderer.trace_stack.innerHTML = ''
-            for (let key in res) {
-                renderer.trace_stack.innerHTML += res[key] + '<br/>'
-            }
-        })
-
-        client.invoke('execute', 'get_filter', function (error, res) {
-            console.log(res)
-            renderer.filter_list.innerHTML = ''
-            for (let key in res) {
-                renderer.filter_list.innerHTML += res[key] + '<br/>'
-            }
-        })
-
+function decoList (list, tag) {
+    let ret = ''
+    for (let i in list) {
+        ret += deco(list[i], tag)
     }
+    return ret
+}
 
+const strFilterCard = '<div class="card text-white bg-primary o-hidden h-10 text-center filter-tags_form">' +
+  '<span id="deleteFilterTag_%s"> %s <i class="fa fa-window-close"></i></span></div>'
+
+const strBtnAddFilter = '<button class="btn btn-primary" type="button" id="btnAddFilter_%d"><i class="fa fa-plus" ></i></button>'
+
+const strBtnMoveDown = '<button class="btn btn-primary" type="button" id="btnMoveDown_%d"><i class="fa fa-arrow-right" ></i></button>'
+
+function Renderer () {
     this.on('update_page', function () {
         this.updatePage()
     })
+
+    $('#bntTargetURL').click(function () {
+        let strUrl = $('#targetURL').val()
+        client.invoke('execute', 'set_root', strUrl, function (error, res) {
+            console.log('set target url ', strUrl)
+            renderer.updatePage()
+        })
+    })
+
+    this.addBtnAddFilter = function (item) {
+        $('#btnAddFilter_' + item).click(function () {
+            let strId = $(this).attr('id')
+            let idx = Number(strId.slice('#btnAddFilter_'.length - 1, strId.length))
+            // console.log(idx, typeof (idx), idx.toString())
+
+            client.invoke('execute', 'children_tag', function (error, res) {
+                let tag_name = res.filter(function (value) {
+                      return value[0] === idx
+                  }
+                )[0][1]
+
+                client.invoke('execute', 'add_filter', tag_name, function () {
+                    console.log('add filter' + tag_name)
+                    renderer.updatePage()
+                })
+            })
+        })
+    }
+
+    this.addBtnMoveDown = function (item) {
+        $('#btnMoveDown_' + item).click(function () {
+            let strId = $(this).attr('id')
+            let idx = strId.slice('#btnMoveDown_'.length - 1, strId.length)
+            client.invoke('execute', 'move_down', idx, function () {
+                renderer.updatePage()
+                console.log('btn move down' + idx)
+            })
+        })
+    }
+
+    this.updatePage = function () {
+        //update child tag table
+        client.invoke('execute', 'children_tag', function (error, res) {
+            let childTagTable = $('#childTagTable')
+            let html = ''
+            if (typeof (res) === 'string') {
+                childTagTable.html(html)
+                return
+            }
+
+            //build table head
+            let head = ['add to filter', 'move down', 'idx', 'tag', 'attrs']
+            html += deco(deco(decoList(head, 'th'), 'tr'), 'thead')
+
+            //build table body
+            let list = []
+            for (let i = 0; i < res.length; i++) {
+                let idx = res[i][0]
+                let tag_name = res[i][1]
+                let btnAddFilter = util.format(strBtnAddFilter, idx)
+
+                let btnMoveDown = util.format(strBtnMoveDown, idx)
+                let tag_attrs = res[i][2]
+                let strAttrs = ''
+                if (tag_attrs) {
+                    for (let key in tag_attrs) {
+                        strAttrs += key + ' : ' + tag_attrs[key] + ' | '
+                    }
+                }
+
+                list.push(decoList([btnAddFilter, btnMoveDown, idx, tag_name, strAttrs], 'td'))
+            }
+            html += deco(decoList(list, 'tr'), 'tbody')
+
+            childTagTable.html(html)
+
+            //add button event
+            for (let i in res) {
+                let item = res[i][0]
+                // btn add filter click event
+                renderer.addBtnAddFilter(item)
+                renderer.addBtnMoveDown(item)
+            }
+
+        })
+
+        //update filter_list
+        client.invoke('execute', 'get_filter', function (error, res) {
+            let html = ''
+            for (let i in res) {
+                html += util.format(strFilterCard, res[i], res[i])
+            }
+            $('#filterTagList').html(html)
+
+            //add delete filter btn
+            for (let i in res) {
+                let item = res[i]
+                $('#deleteFilterTag_' + item).click(function () {
+                    let strId = $(this).attr('id')
+                    let tag_name = strId.slice('#deleteFilterTag_'.length - 1, strId.length)
+                    client.invoke('execute', 'del_filter', tag_name, function () {
+                        console.log('del filter' + tag_name)
+                        renderer.emit('update_page')
+                    })
+                })
+            }
+
+        })
+
+        //update output html
+        client.invoke('execute', 'current_html', function (error, res) {
+            $('#outputHTML').html(res)
+        })
+
+        //TODO  implement this
+        // client.invoke('execute', 'trace_stack', function (error, res) {
+        //     // console.log(res)
+        //     renderer.trace_stack.innerHTML = ''
+        //     for (let key in res) {
+        //         renderer.trace_stack.innerHTML += res[key] + '<br/>'
+        //     }
+        // })
+
+    }
+
+    //TODO  implement this
+    // this.btn_back.addEventListener('click', function () {
+    //     client.invoke('execute', 'move_up', function (err, res) {
+    //         renderer.emit('update_page')
+    //     })
+    //     // ipcRenderer.send('back', 0)
+    // })
+    //
+
+    //
+
 }
 
 util.inherits(Renderer, EventEmitter)
 
 let renderer = new Renderer()
+
+window.$ = window.jQuery = require('./node_modules/jquery/dist/jquery.min.js')
 
 // url.addEventListener('input', () => {
 //     ipcRenderer.send('update_html_address', url.value)

@@ -1,72 +1,317 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Hello Calculator!</title>
 
-    <style>
-        .body_block {
-            background-color: darkgrey
-        }
-        
-        .tag_block {
-            background-color: coral;
-            display: inline-flex;
-        }
-        
-        div {
-            background-color: powderblue;
-            outline-width: thin;
-            outline-style: solid;
-            outline-color: black;
-        }
-        
-        .tag_list_block {
-            background-color: coral;
-        }
-        
-        .filter_tag_list_block {
-            background-color: cornflowerblue;
-        }
-        
-        .stack_trace_block {
-            background-color: burlywood;
-        }
-        
-        .html_output_block {
-            background-color: darkorange;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>SB Admin - Start Bootstrap Template</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="bootstrap/vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="bootstrap/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap/css/sb-admin.css" rel="stylesheet">
+
+    <!-- custom css-->
+    <link href="custom.css" rel="stylesheet" type="text/css">
+
+
 </head>
 
-<body class="body_block">
-    <div class="tag_block">
-        <div>
-            <p>html address</p>
-            <input id="url" value="http://bbs.ruliweb.com/best/humor" />
-            <button id="btn_set_url">set url</button>
-        </div>
-        <div class='tag_list_block' id="tag_list">
-            <p>tag list</p>
-        </div>
-        <div class="filter_tag_list_block" id="filter_list">
-            <p>filter list </p>
-        </div>
-        <div class="stack_trace_block" id="stack_trace">
-            <p>stack trace</p>
-        </div>
+<body class="fixed-nav" id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <a class="navbar-brand" href="#">Start Bootstrap</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav navbar-sidenav">
+            <!--dash board-->
+            <li class="nav-item active" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                <a class="nav-link" href="#">
+                    <i class="fa fa-fw fa-dashboard"></i>
+                    <span class="nav-link-text">Dashboard</span>
+                </a>
+            </li>
+            <!--setting-->
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Setting">
+                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents">
+                    <i class="fa fa-fw fa-wrench"></i>
+                    <span class="nav-link-text">Setting</span>
+                </a>
+                <ul class="sidenav-second-level collapse" id="collapseComponents">
+                    <li>
+                        <a href="#">Static Navigation</a>
+                    </li>
+                    <li>
+                        <a href="#">Custom Card Examples</a>
+                    </li>
+                    <li>
+                        <a href="#">Blank Page</a>
+                    </li>
+                    <li>
+                        <a href="#">Login Page</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="navbar-nav sidenav-toggler">
+            <li class="nav-item">
+                <a class="nav-link text-center" id="sidenavToggler">
+                    <i class="fa fa-fw fa-angle-left"></i>
+                </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+        </ul>
     </div>
-    <div class="html_output_block">
-        <p>html output</p>
-        <div id="html_output">
-        <br>
+</nav>
+
+<div class="content-wrapper py-3">
+
+    <div class="container-fluid">
+
+        <!-- Breadcrumbs -->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="#">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active">My Dashboard</li>
+        </ol>
+
+        <!-- Icon Cards -->
+        <div class="row">
+            <div class="col-xl-3 col-sm-6 mb-3">
+                <a href="#/done">
+                    <div class="card text-white bg-primary o-hidden h-100">
+                        <div class="card-body">
+                            <div class="card-body-icon">
+                                <i class="fa fa-fw fa-comments"></i>
+                            </div>
+                            <div class="mr-5">
+                                26 New Messages!
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
+
+        <div class="row">
+
+            <!-- target URL-->
+            <div class="col-lg-8">
+                <div class="card mb-3">
+                    <div class="card-header">
+                        Target URL
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for..." id="targetURL"
+                                   value="http://bbs.ruliweb.com/best/humor?&page=2">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="button" id="bntTargetURL">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- filter tags -->
+            <div class="col-lg-4 col-md-8">
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <i class="fa fa-tags" aria-hidden="false"></i> Filter Tags
+                    </div>
+                    <div class="card-body row" id="filterTagList">
+
+                        <div class="card text-white bg-primary o-hidden h-10 text-center filter-tags_form">
+                            <span>tag_name <i class="fa fa-window-close"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- stack trace -->
+            <div class="col-lg-8 col-md-4">
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <i class="fa fa-stack-overflow"></i>
+                        Stack Trace
+                    </div>
+
+                    <div class="list-group list-group-flush small">
+                        <div class="list-group-item list-group-item-action">
+                            <div class="card text-white bg-primary o-hidden h-25" data-toggle="tooltip"
+                                 data-placement="right" title="top">
+                                <div class="collapsed" data-toggle="collapse" href="#stackTraceItemBottom">
+                                    <div class="card-body stack-trace-item">
+                                        Bottom
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse stack-trace-item-attrs" id="stackTraceItemBottom">
+                                attrs
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- parse form -->
+            <div class="col-lg-4 col-md-8">
+                <div class="card mb-3">
+                    <div class="card-header">
+                        Parse Form
+                    </div>
+                    <div class="card-body" id="parseForm">
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary" type="button" id="btnImportParseForm">import</button>
+                        <button class="btn btn-primary" type="button" id="btnExportParseForm">export</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- child tag table -->
+        <div class="card mb-3">
+            <div class="card-header">
+                <i class="fa fa-table"></i>
+                Child Tag Table
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" width="100%" id="childTagTable" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <th>add Filter</th>
+                            <th>move to</th>
+                            <th>Office</th>
+                            <th>Age</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                            <th>Salary</th>
+                            <th>Salary</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <button class="btn btn-primary" type="button" id="btnAddFilter1">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                </button>
+                            </td>
+                            <td>Javascript Developer</td>
+                            <td>San Francisco</td>
+                            <td>39</td>
+                            <td>2009/09/15</td>
+                            <td>$205,500</td>
+                            <td>$205,500</td>
+                            <td>$205,500</td>
+
+                        </tr>
+
+
+                        <tr>
+                            <td>
+                                <button class="btn btn-primary" type="button" id="btnAddFilter2">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </td>
+
+
+                            <td>
+                                <button class="btn btn-primary" type="button" id="bntMoveDown2">
+                                    <i class="fa fa-arrow-right"></i>
+                                </button>
+                            </td>
+                            <td>San Francisco</td>
+                            <td>39</td>
+                            <td>2009/09/15</td>
+                            <td>$205,500</td>
+                            <td>$205,500</td>
+                            <td>$205,500</td>
+
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- target url-->
+        <div class="card mb-3">
+            <div class="card-header">
+                <i class="fa fa-html5"></i>
+                HTML Output
+            </div>
+            <div class="card-body">
+                <div id="outputHTML">
+
+                </div>
+
+            </div>
+        </div>
+
+
     </div>
-</body>
+    <!-- /.container-fluid -->
+
+</div>
+<!-- /.content-wrapper -->
+
+<!-- Scroll to Top Button -->
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fa fa-angle-up"></i>
+</a>
+
+
+<script>window.$ = window.jQuery = require('./node_modules/jquery/dist/jquery.min.js')</script>
+<!-- Bootstrap core JavaScript -->
+<script src="bootstrap/vendor/jquery/jquery.min.js"></script>
+<script src="bootstrap/vendor/popper/popper.min.js"></script>
+<script src="bootstrap/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="bootstrap/vendor/jquery-easing/jquery.easing.min.js"></script>
+<!--<script src="bootstrap/vendor/chart.js/Chart.min.js"></script>-->
+<script src="bootstrap/vendor/datatables/jquery.dataTables.js"></script>
+<script src="bootstrap/vendor/datatables/dataTables.bootstrap4.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="bootstrap/js/sb-admin.js"></script>
+
 <script>
     require('./renderer.js')
 </script>
+
+
+</body>
 
 </html>

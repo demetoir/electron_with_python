@@ -1,0 +1,19 @@
+.filter-tags_form{
+    margin:0.1rem;
+    padding-left:0.5rem;
+    padding-right:0.5rem
+}
+
+
+.h-10 {
+    height: 10% !important;
+}
+
+
+.stack-trace-item{
+    font-size: 170%;
+}
+
+.stack-trace-item-attrs{
+    font-size: 170%;
+}

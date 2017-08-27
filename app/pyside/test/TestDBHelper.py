@@ -3,7 +3,6 @@ from nose import with_setup
 
 from main.util import util
 from main.db.DbHelper import DbHelper
-from main.tagExplorer.HardParser import HardParser
 from main.db.DbContract import WebSiteContract
 from main.db.DbContract import NewFeedContract
 
