@@ -93,20 +93,19 @@ function Renderer () {
     this.updatePage = function () {
         //update child tag table
         client.invoke('execute', 'children_tag', function (error, res) {
-            let childTagTable = $('#childTagTable')
+            let childTagTableBody = $('#childTagTableBody')
             let html = ''
             if (typeof (res) === 'string') {
-                childTagTable.html(res)
+                childTagTableBody.html(res)
                 return
             }
 
             let list = []
             for (let i = 0; i < res.length; i++) {
-                let idx = res[i][0]
+                let childTagIdx = res[i][0]
                 let tag_name = res[i][1]
-                let btnAddFilter = util.format(strBtnAddFilter, idx)
-
-                let btnMoveDown = util.format(strBtnMoveDown, idx)
+                let btnAddFilter = util.format(strBtnAddFilter, childTagIdx)
+                let btnMoveDown = util.format(strBtnMoveDown, childTagIdx)
                 let tag_attrs = res[i][2]
                 let strAttrs = ''
                 if (tag_attrs) {
@@ -115,11 +114,10 @@ function Renderer () {
                     }
                 }
 
-                list.push(decoList([btnAddFilter, btnMoveDown, idx, tag_name, strAttrs], 'td'))
+                list.push(decoList([btnAddFilter, btnMoveDown, childTagIdx, tag_name, strAttrs], 'td'))
             }
-            html += decoList(list, 'tr'),
-
-            childTagTable.html(html)
+            html += decoList(list, 'tr')
+            childTagTableBody.html(html)
 
             //add button event
             for (let i in res) {
