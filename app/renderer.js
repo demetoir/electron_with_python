@@ -38,6 +38,7 @@ function decoList (list, tag) {
     return ret
 }
 
+//fixme refactoring
 const strFilterCard = '<div class="card text-white bg-primary o-hidden h-10 text-center filter-tags_form">' +
   '<span id="deleteFilterTag_%s"> %s <i class="fa fa-window-close"></i></span></div>'
 
@@ -71,7 +72,7 @@ function Renderer () {
                 )[0][1]
 
                 client.invoke('execute', 'add_filter', tag_name, function () {
-                    console.log('add filter' + tag_name)
+                    console.log('add filter ' + tag_name)
                     renderer.updatePage()
                 })
             })
@@ -95,15 +96,10 @@ function Renderer () {
             let childTagTable = $('#childTagTable')
             let html = ''
             if (typeof (res) === 'string') {
-                childTagTable.html(html)
+                childTagTable.html(res)
                 return
             }
 
-            //build table head
-            let head = ['add to filter', 'move down', 'idx', 'tag', 'attrs']
-            html += deco(deco(decoList(head, 'th'), 'tr'), 'thead')
-
-            //build table body
             let list = []
             for (let i = 0; i < res.length; i++) {
                 let idx = res[i][0]
@@ -121,7 +117,7 @@ function Renderer () {
 
                 list.push(decoList([btnAddFilter, btnMoveDown, idx, tag_name, strAttrs], 'td'))
             }
-            html += deco(decoList(list, 'tr'), 'tbody')
+            html += decoList(list, 'tr'),
 
             childTagTable.html(html)
 
@@ -132,7 +128,6 @@ function Renderer () {
                 renderer.addBtnAddFilter(item)
                 renderer.addBtnMoveDown(item)
             }
-
         })
 
         //update filter_list
@@ -160,7 +155,9 @@ function Renderer () {
 
         //update output html
         client.invoke('execute', 'current_html', function (error, res) {
-            $('#outputHTML').html(res)
+            // WTF? this make faster and solve zerorpc msg multiplexing error but why ?
+            $('#outputHTML')[0].innerHTML = res
+            // $('#outputHTML').html(res)
         })
 
         //TODO  implement this
@@ -183,16 +180,14 @@ function Renderer () {
     // })
     //
 
-    //
-
 }
 
 util.inherits(Renderer, EventEmitter)
 
 let renderer = new Renderer()
 
-window.$ = window.jQuery = require('./node_modules/jquery/dist/jquery.min.js')
 
+// TODO ipc to main and renderer
 // url.addEventListener('input', () => {
 //     ipcRenderer.send('update_html_address', url.value)
 // })

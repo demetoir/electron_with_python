@@ -205,45 +205,23 @@
             </div>
             <div class="card-body">
                 <div class="table-responsive">
-                    <table class="table table-bordered" width="100%" id="childTagTable" cellspacing="0">
+                    <table class="table table-bordered" width="100%" cellspacing="0">
                         <thead>
                         <tr>
-                            <th>add Filter</th>
-                            <th>move to</th>
-                            <th>Office</th>
-                            <th>Age</th>
-                            <th>Start date</th>
-                            <th>Salary</th>
-                            <th>Salary</th>
-                            <th>Salary</th>
+                            <th class="table-item-slim">add filter</th>
+                            <th class="table-item-slim">select</th>
+                            <th class="table-item-slim">idx</th>
+                            <th class="table-item-slim">tag</th>
+                            <th>attrs</th>
                         </tr>
                         </thead>
-                        <tbody>
-                        <tr>
-                            <td>
-                                <button class="btn btn-primary" type="button" id="btnAddFilter1">
-                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                </button>
-                            </td>
-                            <td>Javascript Developer</td>
-                            <td>San Francisco</td>
-                            <td>39</td>
-                            <td>2009/09/15</td>
-                            <td>$205,500</td>
-                            <td>$205,500</td>
-                            <td>$205,500</td>
-
-                        </tr>
-
-
+                        <tbody id="childTagTableBody">
                         <tr>
                             <td>
                                 <button class="btn btn-primary" type="button" id="btnAddFilter2">
                                     <i class="fa fa-plus"></i>
                                 </button>
                             </td>
-
-
                             <td>
                                 <button class="btn btn-primary" type="button" id="bntMoveDown2">
                                     <i class="fa fa-arrow-right"></i>
@@ -255,10 +233,7 @@
                             <td>$205,500</td>
                             <td>$205,500</td>
                             <td>$205,500</td>
-
                         </tr>
-
-
                         </tbody>
                     </table>
                 </div>
@@ -292,7 +267,7 @@
 </a>
 
 
-<script>window.$ = window.jQuery = require('./node_modules/jquery/dist/jquery.min.js')</script>
+<script>window.$ = window.jQuery = require('./bootstrap/vendor/jquery/jquery.min')</script>
 <!-- Bootstrap core JavaScript -->
 <script src="bootstrap/vendor/jquery/jquery.min.js"></script>
 <script src="bootstrap/vendor/popper/popper.min.js"></script>

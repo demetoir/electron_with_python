@@ -17,3 +17,7 @@
 .stack-trace-item-attrs{
     font-size: 170%;
 }
+
+.table-item-slim{
+    width: 1%;
+}
