@@ -21,3 +21,7 @@
 .table-item-slim{
     width: 1%;
 }
+
+.card-body-inside-margin-bottom {
+    margin-bottom: 10px;
+}

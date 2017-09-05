@@ -167,6 +167,11 @@ function Renderer () {
         //     }
         // })
 
+        client.invoke('execute', '', function(error, res){
+
+        })
+
+
     }
 
     //TODO  implement this
@@ -185,7 +190,7 @@ util.inherits(Renderer, EventEmitter)
 let renderer = new Renderer()
 
 
-// TODO ipc to main and renderer
+    // TODO ipc to main and renderer
 // url.addEventListener('input', () => {
 //     ipcRenderer.send('update_html_address', url.value)
 // })

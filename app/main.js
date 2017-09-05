@@ -56,11 +56,11 @@ app.on('activate', function () {
 let pyServer = null
 const createPyServer = function () {
     let port = '' + '4242'
-    let script = path.join(__dirname, 'pyside', 'main', 'pyServer', 'PyServer.py')
+    let script_path = path.join(__dirname, 'pyside', 'main', 'pyServer', 'PyServer.py')
     let cmd = 'python3'
-    let args = [script, port]
+    let args = [script_path, port]
 
-    console.log(cmd + ' ' + script)
+    console.log(cmd + ' ' + script_path)
     pyServer = require('child_process').spawn(cmd, args)
     if (pyServer !== null) {
         console.log('pyServer spawn success')
